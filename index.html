@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#06040f">
+    <meta name="description" content="Mettlestate × EA FC Mobile League — Live Standings & Fixtures">
+    <title>Mettlestate × EA FC Mobile — Standings</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Syne:wght@400;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* ======================================================
+           DESIGN SYSTEM — Deep Space Glassmorphism
+           ====================================================== */
+        :root {
+            --bg:          #06040f;
+            --bg2:         #0c0820;
+            --surface:     rgba(255,255,255,0.035);
+            --surface-hi:  rgba(255,255,255,0.065);
+            --border:      rgba(255,255,255,0.08);
+            --border-hi:   rgba(139,92,246,0.4);
+            --purple:      #8b5cf6;
+            --violet:      #7c3aed;
+            --blue:        #3b82f6;
+            --blue-lo:     rgba(59,130,246,0.15);
+            --gold:        #f59e0b;
+            --green:       #10b981;
+            --red:         #ef4444;
+            --text:        #e2e8f0;
+            --muted:       #64748b;
+            --win:         #10b981;
+            --draw:        #f59e0b;
+            --loss:        #ef4444;
+        }
+
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Syne', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* ---- STARFIELD CANVAS ---- */
+        #starfield {
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        /* ---- GRID NOISE OVERLAY ---- */
+        .grid-overlay {
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            pointer-events: none;
+            background-image:
+                linear-gradient(rgba(139,92,246,0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(139,92,246,0.03) 1px, transparent 1px);
+            background-size: 48px 48px;
+        }
+
+        /* ---- GLOW ORBS ---- */
+        .orb {
+            position: fixed;
+            border-radius: 50%;
+            filter: blur(120px);
+            pointer-events: none;
+            z-index: 0;
+        }
+        .orb-1 { width:500px; height:500px; top:-100px; left:-150px; background:rgba(124,58,237,0.12); }
+        .orb-2 { width:400px; height:400px; bottom:-80px; right:-100px; background:rgba(59,130,246,0.09); }
+        .orb-3 { width:300px; height:300px; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(139,92,246,0.05); }
+
+        /* ---- LAYOUT ---- */
+        .app {
+            position: relative;
+            z-index: 1;
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 16px 60px;
+        }
+
+        /* ---- HEADER ---- */
+        header {
+            padding: 40px 0 32px;
+            text-align: center;
+            animation: fadeDown 0.6s ease both;
+        }
+
+        .logo-badge {
+            width: 64px;
+            height: 64px;
+            object-fit: contain;
+            filter: drop-shadow(0 0 16px rgba(139,92,246,0.5));
+            margin-bottom: 12px;
+        }
+
+        .site-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: clamp(1.5rem, 5vw, 2.6rem);
+            font-weight: 900;
+            letter-spacing: 0.05em;
+            line-height: 1;
+            background: linear-gradient(135deg, #c4b5fd 0%, #818cf8 40%, #38bdf8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .site-sub {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.72rem;
+            color: var(--muted);
+            letter-spacing: 0.18em;
+            margin-top: 6px;
+            text-transform: uppercase;
+        }
+
+        .season-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 14px;
+            padding: 4px 14px;
+            border-radius: 999px;
+            border: 1px solid var(--border-hi);
+            background: rgba(139,92,246,0.1);
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.62rem;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            color: #a78bfa;
+        }
+        .season-tag::before {
+            content: '';
+            width: 6px; height: 6px;
+            border-radius: 50%;
+            background: var(--green);
+            box-shadow: 0 0 6px var(--green);
+            animation: pulse 2s infinite;
+        }
+
+        /* ---- REFRESH BAR ---- */
+        .refresh-bar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.72rem;
+            color: var(--muted);
+            margin-bottom: 24px;
+            animation: fadeDown 0.7s ease 0.1s both;
+        }
+        .refresh-bar .dot {
+            width: 5px; height: 5px;
+            border-radius: 50%;
+            background: var(--green);
+            animation: pulse 2s infinite;
+        }
+        #last-updated { color: #94a3b8; }
+
+        /* ---- NAV TABS ---- */
+        nav.tab-nav {
+            display: flex;
+            gap: 4px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 4px;
+            margin-bottom: 28px;
+            backdrop-filter: blur(12px);
+            animation: fadeDown 0.7s ease 0.15s both;
+        }
+
+        nav.tab-nav button {
+            flex: 1;
+            padding: 10px 16px;
+            border: none;
+            border-radius: 9px;
+            background: transparent;
+            color: var(--muted);
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.68rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        nav.tab-nav button.active {
+            background: linear-gradient(135deg, rgba(124,58,237,0.45), rgba(59,130,246,0.3));
+            color: #c4b5fd;
+            border: 1px solid rgba(139,92,246,0.4);
+            box-shadow: 0 0 20px rgba(124,58,237,0.15);
+        }
+
+        nav.tab-nav button:not(.active):hover {
+            background: var(--surface-hi);
+            color: var(--text);
+        }
+
+        /* ---- SECTION ---- */
+        .tab-content { display: none; animation: fadeUp 0.35s ease both; }
+        .tab-content.active { display: block; }
+
+        /* ---- GLASS CARD ---- */
+        .glass-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            backdrop-filter: blur(16px);
+            overflow: hidden;
+        }
+
+        /* ---- SECTION HEADER ---- */
+        .sec-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 24px 16px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .sec-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            color: #c4b5fd;
+        }
+
+        .sec-badge {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.65rem;
+            color: var(--muted);
+            letter-spacing: 0.1em;
+        }
+
+        /* ---- PODIUM ---- */
+        .podium {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 12px;
+            padding: 20px 20px 8px;
+        }
+
+        .podium-card {
+            border-radius: 12px;
+            padding: 16px 12px;
+            text-align: center;
+            border: 1px solid var(--border);
+            transition: transform 0.2s;
+        }
+        .podium-card:hover { transform: translateY(-3px); }
+
+        .podium-card.rank-1 {
+            background: linear-gradient(145deg, rgba(245,158,11,0.18), rgba(245,158,11,0.05));
+            border-color: rgba(245,158,11,0.35);
+            order: 2;
+            transform: translateY(-8px);
+        }
+        .podium-card.rank-2 { background: rgba(148,163,184,0.08); border-color: rgba(148,163,184,0.2); order: 1; }
+        .podium-card.rank-3 { background: rgba(180,120,80,0.08); border-color: rgba(180,120,80,0.2); order: 3; }
+
+        .podium-medal { font-size: 1.8rem; margin-bottom: 6px; }
+        .podium-name  { font-family: 'Orbitron', sans-serif; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.06em; }
+        .podium-pts   { font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; color: var(--muted); margin-top: 4px; }
+        .podium-pts strong { color: var(--gold); }
+
+        /* ---- LEADERBOARD TABLE ---- */
+        .table-wrap { overflow-x: auto; }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        thead th {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.6rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            color: var(--muted);
+            padding: 10px 12px;
+            text-align: center;
+            border-bottom: 1px solid var(--border);
+            white-space: nowrap;
+        }
+        thead th:nth-child(2) { text-align: left; }
+
+        tbody tr {
+            border-bottom: 1px solid rgba(255,255,255,0.04);
+            transition: background 0.15s;
+        }
+        tbody tr:hover { background: var(--surface-hi); }
+        tbody tr:last-child { border-bottom: none; }
+
+        tbody td {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            padding: 11px 12px;
+            text-align: center;
+            color: #94a3b8;
+        }
+        tbody td:nth-child(2) { text-align: left; }
+
+        /* Zone highlight */
+        tr.zone-champ { background: rgba(139,92,246,0.05); }
+        tr.zone-danger { background: rgba(239,68,68,0.05); }
+
+        .pos-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 26px; height: 26px;
+            border-radius: 6px;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.65rem;
+            font-weight: 700;
+            border: 1px solid var(--border);
+            color: var(--muted);
+        }
+        .pos-1 { background: rgba(245,158,11,0.18); border-color: rgba(245,158,11,0.4); color: #f59e0b; }
+        .pos-2 { background: rgba(148,163,184,0.12); border-color: rgba(148,163,184,0.3); color: #cbd5e1; }
+        .pos-3 { background: rgba(180,120,80,0.12); border-color: rgba(180,120,80,0.3); color: #cd9161; }
+
+        .player-name     { color: var(--text); font-weight: 500; font-size: 0.82rem; }
+        .player-username { font-size: 0.65rem; color: var(--muted); margin-top: 1px; }
+
+        .pts-cell { color: #c4b5fd; font-weight: 700; font-size: 0.9rem; }
+
+        .gd-pos { color: var(--green); }
+        .gd-neg { color: var(--red); }
+
+        .form-badges { display: flex; gap: 3px; justify-content: center; }
+        .form-w, .form-d, .form-l {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 18px; height: 18px;
+            border-radius: 4px;
+            font-size: 0.58rem;
+            font-weight: 700;
+        }
+        .form-w { background: rgba(16,185,129,0.2); color: var(--win); border: 1px solid rgba(16,185,129,0.3); }
+        .form-d { background: rgba(245,158,11,0.2); color: var(--draw); border: 1px solid rgba(245,158,11,0.3); }
+        .form-l { background: rgba(239,68,68,0.2); color: var(--loss); border: 1px solid rgba(239,68,68,0.3); }
+
+        /* ---- LEGEND ---- */
+        .legend {
+            display: flex;
+            gap: 20px;
+            padding: 12px 20px;
+            border-top: 1px solid var(--border);
+            flex-wrap: wrap;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.62rem;
+            color: var(--muted);
+        }
+        .legend-dot { width: 8px; height: 8px; border-radius: 2px; }
+        .legend-dot.champ  { background: rgba(139,92,246,0.5); }
+        .legend-dot.danger { background: rgba(239,68,68,0.5); }
+
+        /* ---- FIXTURES ---- */
+        .fixtures-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 12px;
+            padding: 20px;
+        }
+
+        .fixture-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 18px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            transition: border-color 0.2s, box-shadow 0.2s;
+            animation: fadeUp 0.35s ease both;
+        }
+        .fixture-card:hover {
+            border-color: rgba(139,92,246,0.35);
+            box-shadow: 0 0 20px rgba(139,92,246,0.08);
+        }
+
+        .fix-team {
+            flex: 1;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-align: center;
+            color: var(--text);
+        }
+
+        .vs-orb {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px; height: 38px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(124,58,237,0.3), rgba(59,130,246,0.2));
+            border: 1px solid rgba(139,92,246,0.35);
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.6rem;
+            font-weight: 900;
+            color: #c4b5fd;
+            flex-shrink: 0;
+        }
+
+        /* ---- EMPTY STATE ---- */
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--muted);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            line-height: 1.8;
+        }
+        .empty-state i {
+            display: block;
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+            opacity: 0.3;
+        }
+
+        /* ---- SKELETON LOADING ---- */
+        .skeleton {
+            background: linear-gradient(90deg, var(--surface) 25%, var(--surface-hi) 50%, var(--surface) 75%);
+            background-size: 200% 100%;
+            animation: shimmer 1.4s infinite;
+            border-radius: 6px;
+            height: 18px;
+        }
+        .sk-row { display: flex; gap: 12px; padding: 12px 16px; align-items: center; border-bottom: 1px solid var(--border); }
+
+        /* ---- FOOTER ---- */
+        footer {
+            text-align: center;
+            margin-top: 48px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.65rem;
+            color: var(--muted);
+            letter-spacing: 0.1em;
+            animation: fadeUp 0.6s ease 0.3s both;
+        }
+        footer a { color: var(--purple); text-decoration: none; }
+        footer a:hover { color: #c4b5fd; }
+
+        /* ---- ANIMATIONS ---- */
+        @keyframes fadeDown  { from { opacity:0; transform:translateY(-16px); } to { opacity:1; transform:none; } }
+        @keyframes fadeUp    { from { opacity:0; transform:translateY(16px);  } to { opacity:1; transform:none; } }
+        @keyframes pulse     { 0%,100% { opacity:1; } 50% { opacity:0.4; } }
+        @keyframes shimmer   { 0% { background-position:200% 0; } 100% { background-position:-200% 0; } }
+        @keyframes spin      { to { transform:rotate(360deg); } }
+
+        /* ---- RESPONSIVE ---- */
+        @media (max-width: 600px) {
+            header { padding: 28px 0 20px; }
+            .podium { gap: 8px; padding: 14px 12px 6px; }
+            .podium-medal { font-size: 1.4rem; }
+            .podium-name  { font-size: 0.6rem; }
+            thead th, tbody td { padding: 9px 7px; font-size: 0.72rem; }
+            nav.tab-nav button { font-size: 0.6rem; padding: 9px 10px; }
+            .fixtures-grid { grid-template-columns: 1fr; padding: 12px; }
+        }
+    </style>
+</head>
+<body>
+
+<canvas id="starfield"></canvas>
+<div class="grid-overlay"></div>
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+<div class="orb orb-3"></div>
+
+<div class="app">
+
+    <!-- HEADER -->
+    <header>
+        <img src="assets/logo.png" alt="Mettlestate" class="logo-badge" onerror="this.style.display='none'">
+        <div class="site-title">METTLESTATE</div>
+        <div class="site-sub">× EA FC MOBILE LEAGUE · SEASON 1</div>
+        <div class="season-tag">LIVE STANDINGS</div>
+    </header>
+
+    <!-- REFRESH STATUS -->
+    <div class="refresh-bar">
+        <div class="dot"></div>
+        <span>Live · Auto-refreshes every 5 min ·</span>
+        <span>Last updated: <span id="last-updated">—</span></span>
+    </div>
+
+    <!-- NAV TABS -->
+    <nav class="tab-nav">
+        <button class="active" data-tab="standings" onclick="switchTab('standings',this)">
+            <i class="fas fa-trophy"></i> STANDINGS
+        </button>
+        <button data-tab="fixtures" onclick="switchTab('fixtures',this)">
+            <i class="fas fa-futbol"></i> FIXTURES
+        </button>
+    </nav>
+
+    <!-- STANDINGS TAB -->
+    <div id="standings" class="tab-content active">
+        <div class="glass-card" id="standings-card">
+            <!-- populated by JS -->
+            <div class="sk-row"><div class="skeleton" style="width:30px;height:30px;border-radius:8px;flex-shrink:0"></div><div class="skeleton" style="flex:1"></div><div class="skeleton" style="width:20px"></div><div class="skeleton" style="width:20px"></div><div class="skeleton" style="width:20px"></div><div class="skeleton" style="width:28px"></div></div>
+            <div class="sk-row"><div class="skeleton" style="width:30px;height:30px;border-radius:8px;flex-shrink:0"></div><div class="skeleton" style="flex:1"></div><div class="skeleton" style="width:20px"></div><div class="skeleton" style="width:20px"></div><div class="skeleton" style="width:20px"></div><div class="skeleton" style="width:28px"></div></div>
+            <div class="sk-row"><div class="skeleton" style="width:30px;height:30px;border-radius:8px;flex-shrink:0"></div><div class="skeleton" style="flex:1"></div><div class="skeleton" style="width:20px"></div><div class="skeleton" style="width:20px"></div><div class="skeleton" style="width:20px"></div><div class="skeleton" style="width:28px"></div></div>
+        </div>
+    </div>
+
+    <!-- FIXTURES TAB -->
+    <div id="fixtures" class="tab-content">
+        <div class="glass-card">
+            <div class="sec-header">
+                <div class="sec-title"><i class="fas fa-futbol"></i> &nbsp;PENDING FIXTURES</div>
+                <div class="sec-badge" id="fix-count">—</div>
+            </div>
+            <div id="fixtures-grid" class="fixtures-grid">
+                <div class="empty-state"><i class="fas fa-futbol"></i>Loading fixtures…</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        Powered by <a href="https://mettlestate.com" target="_blank">mettlestate.com</a>
+        &nbsp;·&nbsp; #MettlestateLeague &nbsp;·&nbsp; By Astral Reign
+        <br><br>
+        <i class="fas fa-shield-halved" style="margin-right:4px;color:var(--purple)"></i>
+        Admin access is separate — this is a read-only view.
+    </footer>
+
+</div>
+
+<script>
+/* ============================================================
+   PUBLIC LEADERBOARD — Read-only viewer
+   Fetches data/league-data.json from the same repo each load.
+   Auto-refreshes every 5 minutes.
+   ============================================================ */
+
+let leagueData = { players: [], fixtures: [], results: [] };
+
+// ---- STARFIELD ----
+(function() {
+    const canvas = document.getElementById('starfield');
+    const ctx    = canvas.getContext('2d');
+    let stars    = [];
+
+    function resize() {
+        canvas.width  = window.innerWidth;
+        canvas.height = window.innerHeight;
+    }
+
+    function initStars(n) {
+        stars = [];
+        for (let i = 0; i < n; i++) {
+            stars.push({
+                x:     Math.random() * canvas.width,
+                y:     Math.random() * canvas.height,
+                r:     Math.random() * 1.2 + 0.2,
+                alpha: Math.random() * 0.6 + 0.1,
+                speed: Math.random() * 0.015 + 0.005,
+                phase: Math.random() * Math.PI * 2
+            });
+        }
+    }
+
+    let t = 0;
+    function draw() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        t += 0.008;
+        stars.forEach(s => {
+            const a = s.alpha * (0.5 + 0.5 * Math.sin(t * s.speed * 60 + s.phase));
+            ctx.beginPath();
+            ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+            ctx.fillStyle = `rgba(200,190,255,${a})`;
+            ctx.fill();
+        });
+        requestAnimationFrame(draw);
+    }
+
+    resize();
+    initStars(180);
+    draw();
+    window.addEventListener('resize', () => { resize(); initStars(180); });
+})();
+
+// ---- TAB SWITCH ----
+function switchTab(id, btn) {
+    document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+    document.querySelectorAll('.tab-nav button').forEach(b => b.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    if (btn) btn.classList.add('active');
+}
+
+// ---- LOAD DATA ----
+async function loadData() {
+    try {
+        const res  = await fetch('./data/league-data.json?_=' + Date.now());
+        if (!res.ok) throw new Error('Not found');
+        const data = await res.json();
+        leagueData = data;
+        renderAll(data);
+        const lu = document.getElementById('last-updated');
+        if (data.lastUpdated) {
+            lu.textContent = new Date(data.lastUpdated).toLocaleString('en-ZA', {
+                dateStyle: 'medium', timeStyle: 'short'
+            });
+        } else {
+            lu.textContent = new Date().toLocaleTimeString('en-ZA');
+        }
+    } catch(e) {
+        console.error('Failed to load league data:', e);
+        document.getElementById('standings-card').innerHTML =
+            '<div class="empty-state"><i class="fas fa-satellite-dish"></i>Could not load league data.<br>Check back soon.</div>';
+    }
+}
+
+// ---- RENDER ALL ----
+function renderAll(data) {
+    renderStandings(data.players || []);
+    renderFixtures(data.fixtures || [], data.players || []);
+}
+
+// ---- RENDER STANDINGS ----
+function renderStandings(players) {
+    const card = document.getElementById('standings-card');
+    if (!players.length) {
+        card.innerHTML = '<div class="empty-state"><i class="fas fa-trophy"></i>No players registered yet.</div>';
+        return;
+    }
+
+    const sorted = [...players].sort((a, b) => {
+        if (b.points !== a.points) return b.points - a.points;
+        const gdA = (a.gf||0)-(a.ga||0), gdB = (b.gf||0)-(b.ga||0);
+        return gdA !== gdB ? gdB - gdA : (b.gf||0) - (a.gf||0);
+    });
+
+    // Podium (3+ players)
+    let podiumHTML = '';
+    if (sorted.length >= 3) {
+        const [first, second, third] = sorted;
+        podiumHTML = `
+        <div class="podium">
+            <div class="podium-card rank-2">
+                <div class="podium-medal">🥈</div>
+                <div class="podium-name">${esc(second.username)}</div>
+                <div class="podium-pts">2nd · <strong>${second.points||0}</strong> pts</div>
+            </div>
+            <div class="podium-card rank-1">
+                <div class="podium-medal">🥇</div>
+                <div class="podium-name">${esc(first.username)}</div>
+                <div class="podium-pts">1st · <strong>${first.points||0}</strong> pts</div>
+            </div>
+            <div class="podium-card rank-3">
+                <div class="podium-medal">🥉</div>
+                <div class="podium-name">${esc(third.username)}</div>
+                <div class="podium-pts">3rd · <strong>${third.points||0}</strong> pts</div>
+            </div>
+        </div>`;
+    }
+
+    // Table
+    const rows = sorted.map((p, i) => {
+        const rank  = i + 1;
+        const gd    = (p.gf||0) - (p.ga||0);
+        const gdStr = gd > 0 ? `<span class="gd-pos">+${gd}</span>` :
+                      gd < 0 ? `<span class="gd-neg">${gd}</span>` : `<span>${gd}</span>`;
+        const pos   = rank <= 3 ? `pos-${rank}` : 'pos-n';
+        const zone  = rank <= 3 ? 'zone-champ' : (sorted.length >= 5 && rank >= sorted.length - 1 ? 'zone-danger' : '');
+        const form  = buildForm(p.form || []);
+        return `
+        <tr class="${zone}">
+            <td><span class="pos-badge ${pos}">${rank}</span></td>
+            <td>
+                <div class="player-name">${esc(p.name)}</div>
+                <div class="player-username">${esc(p.username)}</div>
+            </td>
+            <td>${p.played||0}</td>
+            <td>${p.wins||0}</td>
+            <td>${p.draws||0}</td>
+            <td>${p.losses||0}</td>
+            <td>${p.gf||0}</td>
+            <td>${p.ga||0}</td>
+            <td>${gdStr}</td>
+            <td class="pts-cell">${p.points||0}</td>
+            <td><div class="form-badges">${form}</div></td>
+        </tr>`;
+    }).join('');
+
+    card.innerHTML = `
+        ${podiumHTML}
+        <div class="sec-header">
+            <div class="sec-title"><i class="fas fa-trophy"></i> &nbsp;LEAGUE STANDINGS</div>
+            <div class="sec-badge">${sorted.length} PLAYERS</div>
+        </div>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="th-pos">POS</th>
+                        <th>PLAYER</th>
+                        <th title="Played">P</th>
+                        <th title="Wins">W</th>
+                        <th title="Draws">D</th>
+                        <th title="Losses">L</th>
+                        <th title="Goals For">GF</th>
+                        <th title="Goals Against">GA</th>
+                        <th title="Goal Difference">GD</th>
+                        <th title="Points">PTS</th>
+                        <th title="Form (last 5)">FORM</th>
+                    </tr>
+                </thead>
+                <tbody>${rows}</tbody>
+            </table>
+        </div>
+        <div class="legend">
+            <div class="legend-item"><div class="legend-dot champ"></div> Championship zone</div>
+            ${sorted.length >= 5 ? '<div class="legend-item"><div class="legend-dot danger"></div> Relegation zone</div>' : ''}
+        </div>`;
+}
+
+// ---- RENDER FIXTURES ----
+function renderFixtures(fixtures, players) {
+    const grid  = document.getElementById('fixtures-grid');
+    const count = document.getElementById('fix-count');
+
+    if (!fixtures.length) {
+        grid.innerHTML  = '<div class="empty-state"><i class="fas fa-futbol"></i>No pending fixtures right now.<br>Check back after results are processed.</div>';
+        count.textContent = '0 matches';
+        return;
+    }
+
+    count.textContent = fixtures.length + ' match' + (fixtures.length !== 1 ? 'es' : '');
+
+    grid.innerHTML = fixtures.map((f, idx) => {
+        const homeP = players.find(p => p.username === f.home);
+        const awayP = players.find(p => p.username === f.away);
+        const homeDisplay = homeP ? homeP.name : f.home;
+        const awayDisplay = awayP ? awayP.name : f.away;
+        return `
+        <div class="fixture-card" style="animation-delay:${idx * 0.04}s">
+            <div class="fix-team">${esc(homeDisplay)}</div>
+            <div class="vs-orb">VS</div>
+            <div class="fix-team">${esc(awayDisplay)}</div>
+        </div>`;
+    }).join('');
+}
+
+// ---- HELPERS ----
+function buildForm(form) {
+    return (form || []).slice(-5).map(r =>
+        r === 'W' ? '<span class="form-w">W</span>' :
+        r === 'D' ? '<span class="form-d">D</span>' :
+                    '<span class="form-l">L</span>'
+    ).join('');
+}
+
+function esc(str) {
+    return String(str || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+// ---- INIT ----
+loadData();
+// Auto-refresh every 5 minutes
+setInterval(loadData, 5 * 60 * 1000);
+</script>
+</body>
+</html>
