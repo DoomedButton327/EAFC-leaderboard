@@ -170,54 +170,6 @@
         }
         #last-updated { color: #94a3b8; }
 
-        /* ---- NAV TABS ---- */
-        nav.tab-nav {
-            display: flex;
-            gap: 4px;
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 4px;
-            margin-bottom: 28px;
-            backdrop-filter: blur(12px);
-            animation: fadeDown 0.7s ease 0.15s both;
-        }
-
-        nav.tab-nav button {
-            flex: 1;
-            padding: 10px 16px;
-            border: none;
-            border-radius: 9px;
-            background: transparent;
-            color: var(--muted);
-            font-family: 'Orbitron', sans-serif;
-            font-size: 0.68rem;
-            font-weight: 700;
-            letter-spacing: 0.12em;
-            cursor: pointer;
-            transition: all 0.2s;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-        }
-
-        nav.tab-nav button.active {
-            background: linear-gradient(135deg, rgba(124,58,237,0.45), rgba(59,130,246,0.3));
-            color: #c4b5fd;
-            border: 1px solid rgba(139,92,246,0.4);
-            box-shadow: 0 0 20px rgba(124,58,237,0.15);
-        }
-
-        nav.tab-nav button:not(.active):hover {
-            background: var(--surface-hi);
-            color: var(--text);
-        }
-
-        /* ---- SECTION ---- */
-        .tab-content { display: none; animation: fadeUp 0.35s ease both; }
-        .tab-content.active { display: block; }
-
         /* ---- GLASS CARD ---- */
         .glass-card {
             background: var(--surface);
@@ -381,55 +333,6 @@
         .legend-dot.champ  { background: rgba(139,92,246,0.5); }
         .legend-dot.danger { background: rgba(239,68,68,0.5); }
 
-        /* ---- FIXTURES ---- */
-        .fixtures-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 12px;
-            padding: 20px;
-        }
-
-        .fixture-card {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 18px;
-            display: flex;
-            align-items: center;
-            gap: 14px;
-            transition: border-color 0.2s, box-shadow 0.2s;
-            animation: fadeUp 0.35s ease both;
-        }
-        .fixture-card:hover {
-            border-color: rgba(139,92,246,0.35);
-            box-shadow: 0 0 20px rgba(139,92,246,0.08);
-        }
-
-        .fix-team {
-            flex: 1;
-            font-family: 'Orbitron', sans-serif;
-            font-size: 0.72rem;
-            font-weight: 700;
-            letter-spacing: 0.05em;
-            text-align: center;
-            color: var(--text);
-        }
-
-        .vs-orb {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 38px; height: 38px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, rgba(124,58,237,0.3), rgba(59,130,246,0.2));
-            border: 1px solid rgba(139,92,246,0.35);
-            font-family: 'Orbitron', sans-serif;
-            font-size: 0.6rem;
-            font-weight: 900;
-            color: #c4b5fd;
-            flex-shrink: 0;
-        }
-
         /* ---- EMPTY STATE ---- */
         .empty-state {
             text-align: center;
@@ -483,8 +386,6 @@
             .podium-medal { font-size: 1.4rem; }
             .podium-name  { font-size: 0.6rem; }
             thead th, tbody td { padding: 9px 7px; font-size: 0.72rem; }
-            nav.tab-nav button { font-size: 0.6rem; padding: 9px 10px; }
-            .fixtures-grid { grid-template-columns: 1fr; padding: 12px; }
         }
     </style>
 </head>
@@ -513,37 +414,14 @@
         <span>Last updated: <span id="last-updated">—</span></span>
     </div>
 
-    <!-- NAV TABS -->
-    <nav class="tab-nav">
-        <button class="active" data-tab="standings" onclick="switchTab('standings',this)">
-            <i class="fas fa-trophy"></i> STANDINGS
-        </button>
-        <button data-tab="fixtures" onclick="switchTab('fixtures',this)">
-            <i class="fas fa-futbol"></i> FIXTURES
-        </button>
-    </nav>
 
-    <!-- STANDINGS TAB -->
-    <div id="standings" class="tab-content active">
-        <div class="glass-card" id="standings-card">
-            <!-- populated by JS -->
-            <div class="sk-row"><div class="skeleton" style="width:30px;height:30px;border-radius:8px;flex-shrink:0"></div><div class="skeleton" style="flex:1"></div><div class="skeleton" style="width:20px"></div><div class="skeleton" style="width:20px"></div><div class="skeleton" style="width:20px"></div><div class="skeleton" style="width:28px"></div></div>
-            <div class="sk-row"><div class="skeleton" style="width:30px;height:30px;border-radius:8px;flex-shrink:0"></div><div class="skeleton" style="flex:1"></div><div class="skeleton" style="width:20px"></div><div class="skeleton" style="width:20px"></div><div class="skeleton" style="width:20px"></div><div class="skeleton" style="width:28px"></div></div>
-            <div class="sk-row"><div class="skeleton" style="width:30px;height:30px;border-radius:8px;flex-shrink:0"></div><div class="skeleton" style="flex:1"></div><div class="skeleton" style="width:20px"></div><div class="skeleton" style="width:20px"></div><div class="skeleton" style="width:20px"></div><div class="skeleton" style="width:28px"></div></div>
-        </div>
-    </div>
 
-    <!-- FIXTURES TAB -->
-    <div id="fixtures" class="tab-content">
-        <div class="glass-card">
-            <div class="sec-header">
-                <div class="sec-title"><i class="fas fa-futbol"></i> &nbsp;PENDING FIXTURES</div>
-                <div class="sec-badge" id="fix-count">—</div>
-            </div>
-            <div id="fixtures-grid" class="fixtures-grid">
-                <div class="empty-state"><i class="fas fa-futbol"></i>Loading fixtures…</div>
-            </div>
-        </div>
+    <!-- STANDINGS -->
+    <div id="standings-card" class="glass-card">
+        <!-- populated by JS -->
+        <div class="sk-row"><div class="skeleton" style="width:30px;height:30px;border-radius:8px;flex-shrink:0"></div><div class="skeleton" style="flex:1"></div><div class="skeleton" style="width:20px"></div><div class="skeleton" style="width:20px"></div><div class="skeleton" style="width:20px"></div><div class="skeleton" style="width:28px"></div></div>
+        <div class="sk-row"><div class="skeleton" style="width:30px;height:30px;border-radius:8px;flex-shrink:0"></div><div class="skeleton" style="flex:1"></div><div class="skeleton" style="width:20px"></div><div class="skeleton" style="width:20px"></div><div class="skeleton" style="width:20px"></div><div class="skeleton" style="width:28px"></div></div>
+        <div class="sk-row"><div class="skeleton" style="width:30px;height:30px;border-radius:8px;flex-shrink:0"></div><div class="skeleton" style="flex:1"></div><div class="skeleton" style="width:20px"></div><div class="skeleton" style="width:20px"></div><div class="skeleton" style="width:20px"></div><div class="skeleton" style="width:28px"></div></div>
     </div>
 
     <!-- FOOTER -->
@@ -611,14 +489,6 @@ let leagueData = { players: [], fixtures: [], results: [] };
     window.addEventListener('resize', () => { resize(); initStars(180); });
 })();
 
-// ---- TAB SWITCH ----
-function switchTab(id, btn) {
-    document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
-    document.querySelectorAll('.tab-nav button').forEach(b => b.classList.remove('active'));
-    document.getElementById(id).classList.add('active');
-    if (btn) btn.classList.add('active');
-}
-
 // ---- LOAD DATA ----
 async function loadData() {
     try {
@@ -645,7 +515,6 @@ async function loadData() {
 // ---- RENDER ALL ----
 function renderAll(data) {
     renderStandings(data.players || []);
-    renderFixtures(data.fixtures || [], data.players || []);
 }
 
 // ---- RENDER STANDINGS ----
@@ -744,33 +613,6 @@ function renderStandings(players) {
             <div class="legend-item"><div class="legend-dot champ"></div> Championship zone</div>
             ${sorted.length >= 5 ? '<div class="legend-item"><div class="legend-dot danger"></div> Relegation zone</div>' : ''}
         </div>`;
-}
-
-// ---- RENDER FIXTURES ----
-function renderFixtures(fixtures, players) {
-    const grid  = document.getElementById('fixtures-grid');
-    const count = document.getElementById('fix-count');
-
-    if (!fixtures.length) {
-        grid.innerHTML  = '<div class="empty-state"><i class="fas fa-futbol"></i>No pending fixtures right now.<br>Check back after results are processed.</div>';
-        count.textContent = '0 matches';
-        return;
-    }
-
-    count.textContent = fixtures.length + ' match' + (fixtures.length !== 1 ? 'es' : '');
-
-    grid.innerHTML = fixtures.map((f, idx) => {
-        const homeP = players.find(p => p.username === f.home);
-        const awayP = players.find(p => p.username === f.away);
-        const homeDisplay = homeP ? homeP.name : f.home;
-        const awayDisplay = awayP ? awayP.name : f.away;
-        return `
-        <div class="fixture-card" style="animation-delay:${idx * 0.04}s">
-            <div class="fix-team">${esc(homeDisplay)}</div>
-            <div class="vs-orb">VS</div>
-            <div class="fix-team">${esc(awayDisplay)}</div>
-        </div>`;
-    }).join('');
 }
 
 // ---- HELPERS ----
