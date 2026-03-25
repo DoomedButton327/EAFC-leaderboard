@@ -4,39 +4,38 @@
       "name": "Thandobhaze0023",
       "username": "bhaze",
       "phone": "0679687240",
-      "played": 24,
+      "played": 25,
       "wins": 8,
-      "draws": 7,
+      "draws": 8,
       "losses": 9,
-      "points": 31,
+      "points": 32,
       "gf": 25,
       "ga": 27,
       "form": [
         "L",
         "L",
-        "L",
         "W",
         "W",
         "W",
         "L",
         "D",
         "D",
-        "L"
+        "L",
+        "D"
       ]
     },
     {
       "name": "Sailor",
       "username": "Sailor",
       "phone": "0677514331",
-      "played": 24,
-      "wins": 6,
+      "played": 25,
+      "wins": 7,
       "draws": 8,
       "losses": 10,
-      "points": 26,
-      "gf": 17,
+      "points": 29,
+      "gf": 20,
       "ga": 24,
       "form": [
-        "D",
         "W",
         "D",
         "D",
@@ -45,6 +44,7 @@
         "L",
         "D",
         "L",
+        "W",
         "W"
       ]
     },
@@ -52,15 +52,14 @@
       "name": "Sibonelo_Kheswa",
       "username": "KING_KHESWA.",
       "phone": "0607557805",
-      "played": 24,
+      "played": 25,
       "wins": 15,
-      "draws": 4,
+      "draws": 5,
       "losses": 5,
-      "points": 49,
+      "points": 50,
       "gf": 45,
       "ga": 15,
       "form": [
-        "W",
         "W",
         "D",
         "W",
@@ -69,22 +68,22 @@
         "D",
         "L",
         "W",
-        "W"
+        "W",
+        "D"
       ]
     },
     {
       "name": "Lukie",
       "username": "Lukie",
       "phone": "0684782614",
-      "played": 25,
+      "played": 26,
       "wins": 3,
       "draws": 9,
-      "losses": 13,
+      "losses": 14,
       "points": 18,
       "gf": 8,
-      "ga": 42,
+      "ga": 45,
       "form": [
-        "W",
         "L",
         "L",
         "L",
@@ -93,31 +92,32 @@
         "L",
         "D",
         "D",
-        "D"
+        "D",
+        "L"
       ]
     },
     {
       "name": "XWRLD🕴🏽",
       "username": "XWRLD_REAPERS",
       "phone": "0750656258",
-      "played": 24,
-      "wins": 13,
+      "played": 25,
+      "wins": 14,
       "draws": 6,
       "losses": 5,
-      "points": 45,
-      "gf": 36,
+      "points": 48,
+      "gf": 39,
       "ga": 17,
       "form": [
         "W",
         "W",
         "W",
-        "W",
         "D",
         "W",
         "D",
         "W",
         "W",
-        "L"
+        "L",
+        "W"
       ]
     },
     {
@@ -148,15 +148,15 @@
       "name": "@Ctaum",
       "username": "Ctaum-cpt",
       "phone": "W.A 0764797158",
-      "played": 24,
-      "wins": 13,
+      "played": 25,
+      "wins": 14,
       "draws": 7,
       "losses": 4,
-      "points": 46,
-      "gf": 46,
+      "points": 49,
+      "gf": 49,
       "ga": 18,
       "form": [
-        "D",
+        "W",
         "W",
         "W",
         "W",
@@ -196,21 +196,21 @@
       "name": "Sibusiso Makhanye❤️😎🇿🇦",
       "username": "Yungboyshlime",
       "phone": "0810878650",
-      "played": 24,
+      "played": 25,
       "wins": 1,
       "draws": 8,
-      "losses": 15,
+      "losses": 16,
       "points": 11,
       "gf": 3,
-      "ga": 43,
+      "ga": 46,
       "form": [
         "L",
         "L",
         "L",
         "L",
+        "D",
+        "D",
         "L",
-        "D",
-        "D",
         "L",
         "L",
         "L"
@@ -340,15 +340,14 @@
       "name": "MOOSA",
       "username": "CRANK_",
       "phone": "0699906125",
-      "played": 22,
-      "wins": 10,
+      "played": 23,
+      "wins": 11,
       "draws": 6,
       "losses": 6,
-      "points": 36,
-      "gf": 35,
+      "points": 39,
+      "gf": 38,
       "ga": 16,
       "form": [
-        "D",
         "D",
         "W",
         "W",
@@ -356,6 +355,7 @@
         "D",
         "W",
         "L",
+        "W",
         "W",
         "W"
       ]
@@ -388,21 +388,21 @@
       "name": "Mogau",
       "username": "MGSatarou",
       "phone": "0826993315",
-      "played": 24,
+      "played": 25,
       "wins": 9,
-      "draws": 10,
+      "draws": 11,
       "losses": 5,
-      "points": 37,
+      "points": 38,
       "gf": 29,
       "ga": 22,
       "form": [
-        "L",
         "D",
         "D",
         "W",
         "L",
         "D",
         "W",
+        "D",
         "D",
         "D",
         "D"
@@ -412,15 +412,14 @@
       "name": "A H 〽️ A D",
       "username": "Barca.",
       "phone": "0741645995",
-      "played": 24,
+      "played": 25,
       "wins": 2,
       "draws": 12,
-      "losses": 10,
+      "losses": 11,
       "points": 17,
       "gf": 6,
-      "ga": 34,
+      "ga": 37,
       "form": [
-        "D",
         "L",
         "L",
         "D",
@@ -429,22 +428,22 @@
         "D",
         "D",
         "D",
-        "D"
+        "D",
+        "L"
       ]
     },
     {
       "name": "DJRonaldoZA",
       "username": "DJRonaldoZA",
       "phone": "0711764627",
-      "played": 23,
+      "played": 24,
       "wins": 8,
-      "draws": 2,
+      "draws": 3,
       "losses": 13,
-      "points": 26,
+      "points": 27,
       "gf": 19,
       "ga": 34,
       "form": [
-        "L",
         "W",
         "L",
         "L",
@@ -453,7 +452,8 @@
         "W",
         "L",
         "L",
-        "L"
+        "L",
+        "D"
       ]
     },
     {
@@ -484,51 +484,23 @@
       "name": "Dude",
       "username": "DARK-_-CEO",
       "phone": "0786090530",
-      "played": 0,
+      "played": 1,
       "wins": 0,
       "draws": 0,
-      "losses": 0,
+      "losses": 1,
       "points": 0,
       "gf": 0,
-      "ga": 0,
-      "form": []
+      "ga": 3,
+      "form": [
+        "L"
+      ]
     }
   ],
   "fixtures": [
     {
-      "home": "bhaze",
-      "away": "DJRonaldoZA",
-      "id": 1774337542792
-    },
-    {
-      "home": "DARK-_-CEO",
-      "away": "Sailor",
-      "id": 1774337542796
-    },
-    {
-      "home": "MGSatarou",
-      "away": "KING_KHESWA.",
-      "id": 1774337542798
-    },
-    {
-      "home": "Lukie",
-      "away": "CRANK_",
-      "id": 1774337542802
-    },
-    {
-      "home": "Yungboyshlime",
-      "away": "XWRLD_REAPERS",
-      "id": 1774337542804
-    },
-    {
       "home": "RoyalAM",
       "away": "wham",
       "id": 1774337542806
-    },
-    {
-      "home": "Barca.",
-      "away": "Ctaum-cpt",
-      "id": 1774337542808
     }
   ],
   "results": [
@@ -2634,7 +2606,57 @@
       "awayGoals": 0,
       "id": 1774380935847,
       "imageUrl": "https://raw.githubusercontent.com/DoomedButton327/EAFC-mobile-leagues/main/match-images/RFT07_vs_E1even-Starz_1774380933754.jpg"
+    },
+    {
+      "home": "Lukie",
+      "away": "CRANK_",
+      "result": "away",
+      "homeGoals": 0,
+      "awayGoals": 3,
+      "id": 1774417917978,
+      "imageUrl": "https://raw.githubusercontent.com/DoomedButton327/EAFC-mobile-leagues/main/match-images/Lukie_vs_CRANK__1774417917146.jpg"
+    },
+    {
+      "home": "Barca.",
+      "away": "Ctaum-cpt",
+      "result": "away",
+      "homeGoals": 0,
+      "awayGoals": 3,
+      "id": 1774417942353,
+      "imageUrl": "https://raw.githubusercontent.com/DoomedButton327/EAFC-mobile-leagues/main/match-images/Barca._vs_Ctaum-cpt_1774417940978.jpg"
+    },
+    {
+      "home": "DARK-_-CEO",
+      "away": "Sailor",
+      "result": "away",
+      "homeGoals": 0,
+      "awayGoals": 3,
+      "id": 1774417994130
+    },
+    {
+      "home": "MGSatarou",
+      "away": "KING_KHESWA.",
+      "result": "draw",
+      "homeGoals": 0,
+      "awayGoals": 0,
+      "id": 1774418046482
+    },
+    {
+      "home": "Yungboyshlime",
+      "away": "XWRLD_REAPERS",
+      "result": "away",
+      "homeGoals": 0,
+      "awayGoals": 3,
+      "id": 1774418099785
+    },
+    {
+      "home": "bhaze",
+      "away": "DJRonaldoZA",
+      "result": "draw",
+      "homeGoals": 0,
+      "awayGoals": 0,
+      "id": 1774418123350
     }
   ],
-  "lastUpdated": "2026-03-24T19:35:49.886Z"
+  "lastUpdated": "2026-03-25T05:55:29.523Z"
 }
