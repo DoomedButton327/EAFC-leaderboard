@@ -56,15 +56,14 @@
       "name": "Sibonelo_Kheswa",
       "username": "KING_KHESWA.",
       "phone": "0607557805",
-      "played": 38,
-      "wins": 24,
+      "played": 39,
+      "wins": 25,
       "draws": 8,
       "losses": 6,
-      "points": 80,
-      "gf": 60,
+      "points": 83,
+      "gf": 65,
       "ga": 19,
       "form": [
-        "W",
         "W",
         "W",
         "W",
@@ -73,7 +72,8 @@
         "W",
         "W",
         "D",
-        "D"
+        "D",
+        "W"
       ],
       "postponements": 20,
       "suspended": false
@@ -82,15 +82,14 @@
       "name": "Lukie",
       "username": "Lukie",
       "phone": "0684782614",
-      "played": 39,
+      "played": 40,
       "wins": 4,
       "draws": 18,
-      "losses": 17,
+      "losses": 18,
       "points": 30,
       "gf": 8,
-      "ga": 49,
+      "ga": 54,
       "form": [
-        "D",
         "W",
         "L",
         "D",
@@ -99,7 +98,8 @@
         "D",
         "D",
         "L",
-        "D"
+        "D",
+        "L"
       ],
       "postponements": 20,
       "suspended": false
@@ -160,20 +160,20 @@
       "name": "🅿️🅾️🕉️🅱️🅰️",
       "username": "RoyalAM",
       "phone": "0781276230",
-      "played": 36,
-      "wins": 20,
+      "played": 37,
+      "wins": 21,
       "draws": 5,
       "losses": 11,
-      "points": 65,
-      "gf": 56,
-      "ga": 26,
+      "points": 68,
+      "gf": 58,
+      "ga": 27,
       "form": [
-        "D",
         "W",
         "W",
         "L",
         "D",
         "D",
+        "W",
         "W",
         "W",
         "W",
@@ -264,15 +264,14 @@
       "name": "SMANGALISO",
       "username": "SMANGALISO",
       "phone": "0780070989",
-      "played": 38,
+      "played": 39,
       "wins": 5,
       "draws": 15,
-      "losses": 18,
+      "losses": 19,
       "points": 30,
-      "gf": 14,
-      "ga": 45,
+      "gf": 15,
+      "ga": 47,
       "form": [
-        "W",
         "L",
         "L",
         "D",
@@ -281,7 +280,8 @@
         "D",
         "L",
         "D",
-        "D"
+        "D",
+        "L"
       ],
       "postponements": 19,
       "suspended": false
@@ -290,15 +290,14 @@
       "name": "Reginald Frank Thornton",
       "username": "RFT07",
       "phone": "0820658330",
-      "played": 37,
-      "wins": 30,
+      "played": 38,
+      "wins": 31,
       "draws": 4,
       "losses": 3,
-      "points": 94,
-      "gf": 82,
+      "points": 97,
+      "gf": 85,
       "ga": 20,
       "form": [
-        "W",
         "W",
         "W",
         "W",
@@ -307,7 +306,8 @@
         "D",
         "W",
         "L",
-        "D"
+        "D",
+        "W"
       ],
       "postponements": 19,
       "suspended": false
@@ -420,15 +420,14 @@
       "name": "El Tigre",
       "username": "Nigelmj21",
       "phone": "0656657141",
-      "played": 36,
+      "played": 37,
       "wins": 9,
       "draws": 18,
-      "losses": 9,
+      "losses": 10,
       "points": 45,
       "gf": 32,
-      "ga": 23,
+      "ga": 26,
       "form": [
-        "L",
         "D",
         "D",
         "D",
@@ -436,6 +435,7 @@
         "L",
         "D",
         "D",
+        "L",
         "L",
         "L"
       ],
@@ -549,12 +549,6 @@
   ],
   "fixtures": [
     {
-      "home": "RoyalAM",
-      "away": "SMANGALISO",
-      "id": 1776317899844,
-      "postponedBy": null
-    },
-    {
       "home": "bhaze",
       "away": "MGSatarou",
       "id": 1776317899846,
@@ -564,18 +558,6 @@
       "home": "DARK-_-CEO",
       "away": "wham",
       "id": 1776317899848,
-      "postponedBy": null
-    },
-    {
-      "home": "Lukie",
-      "away": "KING_KHESWA.",
-      "id": 1776317899854,
-      "postponedBy": null
-    },
-    {
-      "home": "RFT07",
-      "away": "Nigelmj21",
-      "id": 1776317899856,
       "postponedBy": null
     },
     {
@@ -3725,7 +3707,34 @@
       "homeGoals": 4,
       "awayGoals": 1,
       "id": 1776370986808
+    },
+    {
+      "home": "RoyalAM",
+      "away": "SMANGALISO",
+      "result": "home",
+      "homeGoals": 2,
+      "awayGoals": 1,
+      "id": 1776371035693,
+      "imageUrl": "https://raw.githubusercontent.com/DoomedButton327/EAFC-mobile-leagues/main/match-images/RFT07_vs_Nigelmj21_1776371026590.jpg"
+    },
+    {
+      "home": "RFT07",
+      "away": "Nigelmj21",
+      "result": "home",
+      "homeGoals": 3,
+      "awayGoals": 0,
+      "id": 1776371097292,
+      "imageUrl": "https://raw.githubusercontent.com/DoomedButton327/EAFC-mobile-leagues/main/match-images/RFT07_vs_Nigelmj21_1776371095625.jpg"
+    },
+    {
+      "home": "Lukie",
+      "away": "KING_KHESWA.",
+      "result": "away",
+      "homeGoals": 0,
+      "awayGoals": 5,
+      "id": 1776371382264,
+      "imageUrl": "https://raw.githubusercontent.com/DoomedButton327/EAFC-mobile-leagues/main/match-images/Lukie_vs_KING_KHESWA._1776371378331.jpg"
     }
   ],
-  "lastUpdated": "2026-04-16T20:23:07.231Z"
+  "lastUpdated": "2026-04-16T20:29:46.591Z"
 }
