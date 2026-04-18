@@ -4,21 +4,21 @@
       "name": "Thandobhaze0023",
       "username": "bhaze",
       "phone": "0679687240",
-      "played": 40,
+      "played": 41,
       "wins": 9,
-      "draws": 14,
+      "draws": 15,
       "losses": 17,
-      "points": 41,
-      "gf": 28,
-      "ga": 37,
+      "points": 42,
+      "gf": 30,
+      "ga": 39,
       "form": [
-        "L",
         "L",
         "W",
         "L",
         "L",
         "L",
         "L",
+        "D",
         "D",
         "D",
         "D"
@@ -186,15 +186,14 @@
       "name": "@Ctaum",
       "username": "Ctaum-cpt",
       "phone": "W.A 0764797158",
-      "played": 40,
+      "played": 41,
       "wins": 23,
-      "draws": 10,
+      "draws": 11,
       "losses": 7,
-      "points": 79,
-      "gf": 70,
-      "ga": 23,
+      "points": 80,
+      "gf": 72,
+      "ga": 25,
       "form": [
-        "W",
         "L",
         "D",
         "W",
@@ -203,7 +202,8 @@
         "D",
         "D",
         "W",
-        "W"
+        "W",
+        "D"
       ],
       "postponements": 19,
       "suspended": false
@@ -212,15 +212,14 @@
       "name": "uSONGO oMNYAMA oNGEHLULWA",
       "username": "E1even-Starz",
       "phone": "0661750311",
-      "played": 39,
+      "played": 40,
       "wins": 0,
       "draws": 23,
-      "losses": 16,
+      "losses": 17,
       "points": 23,
       "gf": 2,
-      "ga": 45,
+      "ga": 48,
       "form": [
-        "D",
         "D",
         "D",
         "D",
@@ -228,6 +227,7 @@
         "L",
         "D",
         "D",
+        "L",
         "L",
         "L"
       ],
@@ -498,12 +498,12 @@
       "name": "👑•",
       "username": "Zan-Ten",
       "phone": "+27 71 005 0307",
-      "played": 33,
-      "wins": 16,
+      "played": 34,
+      "wins": 17,
       "draws": 5,
       "losses": 12,
-      "points": 53,
-      "gf": 42,
+      "points": 56,
+      "gf": 45,
       "ga": 28,
       "form": [
         "W",
@@ -513,8 +513,8 @@
         "W",
         "W",
         "W",
-        "W",
         "L",
+        "W",
         "W"
       ],
       "postponements": 20,
@@ -549,12 +549,6 @@
   ],
   "fixtures": [
     {
-      "home": "bhaze",
-      "away": "Ctaum-cpt",
-      "id": 1776501499462,
-      "postponedBy": null
-    },
-    {
       "home": "Barca.",
       "away": "Dontwindraw",
       "id": 1776501499464,
@@ -576,12 +570,6 @@
       "home": "leomessi",
       "away": "CRANK_",
       "id": 1776501499472,
-      "postponedBy": null
-    },
-    {
-      "home": "E1even-Starz",
-      "away": "Zan-Ten",
-      "id": 1776501499474,
       "postponedBy": null
     },
     {
@@ -3861,7 +3849,24 @@
       "awayGoals": 6,
       "id": 1776549054126,
       "imageUrl": "https://raw.githubusercontent.com/DoomedButton327/EAFC-mobile-leagues/main/match-images/Yungboyshlime_vs_RFT07_1776549052175.jpeg"
+    },
+    {
+      "home": "bhaze",
+      "away": "Ctaum-cpt",
+      "result": "draw",
+      "homeGoals": 2,
+      "awayGoals": 2,
+      "id": 1776549102279,
+      "imageUrl": "https://raw.githubusercontent.com/DoomedButton327/EAFC-mobile-leagues/main/match-images/bhaze_vs_Ctaum-cpt_1776549100335.jpeg"
+    },
+    {
+      "home": "E1even-Starz",
+      "away": "Zan-Ten",
+      "result": "away",
+      "homeGoals": 0,
+      "awayGoals": 3,
+      "id": 1776549164702
     }
   ],
-  "lastUpdated": "2026-04-18T21:50:57.317Z"
+  "lastUpdated": "2026-04-18T21:52:45.148Z"
 }
