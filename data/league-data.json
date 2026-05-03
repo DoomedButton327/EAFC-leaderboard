@@ -209,8 +209,38 @@
       "form": [],
       "postponements": 20,
       "suspended": false
+    },
+    {
+      "name": "XWRLD 🕴🏼",
+      "username": "XWRLD_REAPERS",
+      "phone": "+27750656258",
+      "played": 0,
+      "wins": 0,
+      "draws": 0,
+      "losses": 0,
+      "points": 0,
+      "gf": 0,
+      "ga": 0,
+      "form": [],
+      "postponements": 20,
+      "suspended": false
+    },
+    {
+      "name": "DJ THABISO KOMAKO",
+      "username": "Kloutt",
+      "phone": "+27792135785",
+      "played": 0,
+      "wins": 0,
+      "draws": 0,
+      "losses": 0,
+      "points": 0,
+      "gf": 0,
+      "ga": 0,
+      "form": [],
+      "postponements": 20,
+      "suspended": false
     }
   ],
-  "updatedAt": "2026-04-30T04:49:42.909Z",
+  "updatedAt": "2026-05-03T08:51:59.376Z",
   "matchesPlayed": 0
 }
