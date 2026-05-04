@@ -1,6 +1,40 @@
 {
   "players": [
     {
+      "name": "Sibusiso Makhanye❤️😎🇿🇦",
+      "username": "YungboyShlime",
+      "phone": "+27810878650",
+      "played": 1,
+      "wins": 1,
+      "draws": 0,
+      "losses": 0,
+      "points": 3,
+      "gf": 7,
+      "ga": 0,
+      "form": [
+        "W"
+      ],
+      "postponements": 20,
+      "suspended": false
+    },
+    {
+      "name": "Reginald Frank Thornton",
+      "username": "RFT07",
+      "phone": "+27820658330",
+      "played": 1,
+      "wins": 1,
+      "draws": 0,
+      "losses": 0,
+      "points": 3,
+      "gf": 3,
+      "ga": 1,
+      "form": [
+        "W"
+      ],
+      "postponements": 20,
+      "suspended": false
+    },
+    {
       "name": "🅿️🅾️🕉️🅱️🅰️",
       "username": "RoyalAM",
       "phone": "+27682987402",
@@ -69,21 +103,6 @@
       "suspended": false
     },
     {
-      "name": "Reginald Frank Thornton",
-      "username": "RFT07",
-      "phone": "+27820658330",
-      "played": 0,
-      "wins": 0,
-      "draws": 0,
-      "losses": 0,
-      "points": 0,
-      "gf": 0,
-      "ga": 0,
-      "form": [],
-      "postponements": 20,
-      "suspended": false
-    },
-    {
       "name": "Moosa",
       "username": "CRANK_",
       "phone": "+27699906125",
@@ -117,21 +136,6 @@
       "name": "👑•",
       "username": "Zan-Ten",
       "phone": "+27710050307",
-      "played": 0,
-      "wins": 0,
-      "draws": 0,
-      "losses": 0,
-      "points": 0,
-      "gf": 0,
-      "ga": 0,
-      "form": [],
-      "postponements": 20,
-      "suspended": false
-    },
-    {
-      "name": "El Tigre",
-      "username": "Nigelmj21",
-      "phone": "+27656657141",
       "played": 0,
       "wins": 0,
       "draws": 0,
@@ -189,39 +193,9 @@
       "suspended": false
     },
     {
-      "name": "Sibusiso Makhanye❤️😎🇿🇦",
-      "username": "YungboyShlime",
-      "phone": "+27810878650",
-      "played": 0,
-      "wins": 0,
-      "draws": 0,
-      "losses": 0,
-      "points": 0,
-      "gf": 0,
-      "ga": 0,
-      "form": [],
-      "postponements": 20,
-      "suspended": false
-    },
-    {
       "name": "Dilibo👑",
       "username": "DiliboL",
       "phone": "+27760348136",
-      "played": 0,
-      "wins": 0,
-      "draws": 0,
-      "losses": 0,
-      "points": 0,
-      "gf": 0,
-      "ga": 0,
-      "form": [],
-      "postponements": 20,
-      "suspended": false
-    },
-    {
-      "name": "DJ THABISO KOMAKO",
-      "username": "Kloutt",
-      "phone": "+27792135785",
       "played": 0,
       "wins": 0,
       "draws": 0,
@@ -245,6 +219,23 @@
       "gf": 0,
       "ga": 0,
       "form": [],
+      "postponements": 20,
+      "suspended": false
+    },
+    {
+      "name": "El Tigre",
+      "username": "Nigelmj21",
+      "phone": "+27656657141",
+      "played": 1,
+      "wins": 0,
+      "draws": 0,
+      "losses": 1,
+      "points": 0,
+      "gf": 1,
+      "ga": 3,
+      "form": [
+        "L"
+      ],
       "postponements": 20,
       "suspended": false
     },
@@ -281,8 +272,25 @@
       ],
       "postponements": 20,
       "suspended": false
+    },
+    {
+      "name": "DJ THABISO KOMAKO",
+      "username": "Kloutt",
+      "phone": "+27792135785",
+      "played": 1,
+      "wins": 0,
+      "draws": 0,
+      "losses": 1,
+      "points": 0,
+      "gf": 0,
+      "ga": 7,
+      "form": [
+        "L"
+      ],
+      "postponements": 20,
+      "suspended": false
     }
   ],
-  "updatedAt": "2026-05-04T18:54:00.718Z",
-  "matchesPlayed": 3
+  "updatedAt": "2026-05-04T19:03:46.391Z",
+  "matchesPlayed": 5
 }
