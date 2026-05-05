@@ -18,6 +18,23 @@
       "suspended": false
     },
     {
+      "name": "Moosa",
+      "username": "CRANK_",
+      "phone": "+27699906125",
+      "played": 1,
+      "wins": 1,
+      "draws": 0,
+      "losses": 0,
+      "points": 3,
+      "gf": 3,
+      "ga": 0,
+      "form": [
+        "W"
+      ],
+      "postponements": 20,
+      "suspended": false
+    },
+    {
       "name": "🅿️🅾️🕉️🅱️🅰️",
       "username": "RoyalAM",
       "phone": "+27682987402",
@@ -103,32 +120,36 @@
       "suspended": false
     },
     {
-      "name": "Moosa",
-      "username": "CRANK_",
-      "phone": "+27699906125",
-      "played": 0,
+      "name": "Sailor",
+      "username": "Sailor",
+      "phone": "+27677514331",
+      "played": 1,
       "wins": 0,
-      "draws": 0,
+      "draws": 1,
       "losses": 0,
-      "points": 0,
+      "points": 1,
       "gf": 0,
       "ga": 0,
-      "form": [],
+      "form": [
+        "D"
+      ],
       "postponements": 20,
       "suspended": false
     },
     {
-      "name": "Sailor",
-      "username": "Sailor",
-      "phone": "+27677514331",
-      "played": 0,
+      "name": "Lucky7",
+      "username": "CodeTalker",
+      "phone": "+27684880622",
+      "played": 1,
       "wins": 0,
-      "draws": 0,
+      "draws": 1,
       "losses": 0,
-      "points": 0,
+      "points": 1,
       "gf": 0,
       "ga": 0,
-      "form": [],
+      "form": [
+        "D"
+      ],
       "postponements": 20,
       "suspended": false
     },
@@ -159,43 +180,13 @@
       "gf": 0,
       "ga": 0,
       "form": [],
-      "postponements": 18,
-      "suspended": false
-    },
-    {
-      "name": "Lucky7",
-      "username": "CodeTalker",
-      "phone": "+27684880622",
-      "played": 0,
-      "wins": 0,
-      "draws": 0,
-      "losses": 0,
-      "points": 0,
-      "gf": 0,
-      "ga": 0,
-      "form": [],
-      "postponements": 20,
+      "postponements": 19,
       "suspended": false
     },
     {
       "name": "Ctaum",
       "username": "Ctaum-cpt",
       "phone": "+27764797158",
-      "played": 0,
-      "wins": 0,
-      "draws": 0,
-      "losses": 0,
-      "points": 0,
-      "gf": 0,
-      "ga": 0,
-      "form": [],
-      "postponements": 20,
-      "suspended": false
-    },
-    {
-      "name": "Dilibo👑",
-      "username": "DiliboL",
-      "phone": "+27760348136",
       "played": 0,
       "wins": 0,
       "draws": 0,
@@ -274,6 +265,23 @@
       "suspended": false
     },
     {
+      "name": "Dilibo👑",
+      "username": "DiliboL",
+      "phone": "+27760348136",
+      "played": 1,
+      "wins": 0,
+      "draws": 0,
+      "losses": 1,
+      "points": 0,
+      "gf": 0,
+      "ga": 3,
+      "form": [
+        "L"
+      ],
+      "postponements": 20,
+      "suspended": false
+    },
+    {
       "name": "DJ THABISO KOMAKO",
       "username": "Kloutt",
       "phone": "+27792135785",
@@ -291,6 +299,6 @@
       "suspended": false
     }
   ],
-  "updatedAt": "2026-05-04T20:17:04.892Z",
-  "matchesPlayed": 5
+  "updatedAt": "2026-05-05T04:15:38.990Z",
+  "matchesPlayed": 7
 }
