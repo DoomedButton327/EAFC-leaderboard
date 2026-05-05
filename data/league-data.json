@@ -1,6 +1,24 @@
 {
   "players": [
     {
+      "name": "Zlatan",
+      "username": "Gillie11",
+      "phone": "+270660513301",
+      "played": 2,
+      "wins": 2,
+      "draws": 0,
+      "losses": 0,
+      "points": 6,
+      "gf": 6,
+      "ga": 2,
+      "form": [
+        "W",
+        "W"
+      ],
+      "postponements": 20,
+      "suspended": false
+    },
+    {
       "name": "Reginald Frank Thornton",
       "username": "RFT07",
       "phone": "+27820658330",
@@ -92,32 +110,16 @@
       "name": "🅿️🅾️🕉️🅱️🅰️",
       "username": "RoyalAM",
       "phone": "+27682987402",
-      "played": 1,
+      "played": 2,
       "wins": 1,
       "draws": 0,
-      "losses": 0,
+      "losses": 1,
       "points": 3,
-      "gf": 3,
-      "ga": 1,
+      "gf": 4,
+      "ga": 4,
       "form": [
-        "W"
-      ],
-      "postponements": 20,
-      "suspended": false
-    },
-    {
-      "name": "Zlatan",
-      "username": "Gillie11",
-      "phone": "+270660513301",
-      "played": 1,
-      "wins": 1,
-      "draws": 0,
-      "losses": 0,
-      "points": 3,
-      "gf": 3,
-      "ga": 1,
-      "form": [
-        "W"
+        "W",
+        "L"
       ],
       "postponements": 20,
       "suspended": false
@@ -175,6 +177,24 @@
       "suspended": false
     },
     {
+      "name": "Thandobhaze",
+      "username": "Bhaze",
+      "phone": "+27679687240",
+      "played": 2,
+      "wins": 0,
+      "draws": 1,
+      "losses": 1,
+      "points": 1,
+      "gf": 1,
+      "ga": 3,
+      "form": [
+        "L",
+        "D"
+      ],
+      "postponements": 20,
+      "suspended": false
+    },
+    {
       "name": "Sailor",
       "username": "Sailor",
       "phone": "+27677514331",
@@ -188,6 +208,24 @@
       "form": [
         "D",
         "L"
+      ],
+      "postponements": 20,
+      "suspended": false
+    },
+    {
+      "name": "DJ THABISO KOMAKO",
+      "username": "Kloutt",
+      "phone": "+27792135785",
+      "played": 2,
+      "wins": 0,
+      "draws": 1,
+      "losses": 1,
+      "points": 1,
+      "gf": 0,
+      "ga": 7,
+      "form": [
+        "L",
+        "D"
       ],
       "postponements": 20,
       "suspended": false
@@ -238,23 +276,6 @@
       "suspended": false
     },
     {
-      "name": "Thandobhaze",
-      "username": "Bhaze",
-      "phone": "+27679687240",
-      "played": 1,
-      "wins": 0,
-      "draws": 0,
-      "losses": 1,
-      "points": 0,
-      "gf": 1,
-      "ga": 3,
-      "form": [
-        "L"
-      ],
-      "postponements": 20,
-      "suspended": false
-    },
-    {
       "name": "SMANGALISO",
       "username": "SMANGALISO",
       "phone": "+27780070989",
@@ -287,25 +308,8 @@
       ],
       "postponements": 20,
       "suspended": false
-    },
-    {
-      "name": "DJ THABISO KOMAKO",
-      "username": "Kloutt",
-      "phone": "+27792135785",
-      "played": 1,
-      "wins": 0,
-      "draws": 0,
-      "losses": 1,
-      "points": 0,
-      "gf": 0,
-      "ga": 7,
-      "form": [
-        "L"
-      ],
-      "postponements": 20,
-      "suspended": false
     }
   ],
-  "updatedAt": "2026-05-05T20:58:47.415Z",
-  "matchesPlayed": 11
+  "updatedAt": "2026-05-05T21:02:54.059Z",
+  "matchesPlayed": 13
 }
