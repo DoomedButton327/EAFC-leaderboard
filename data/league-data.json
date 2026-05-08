@@ -21,6 +21,27 @@
       "suspended": false
     },
     {
+      "name": "El Tigre",
+      "username": "Nigelmj21",
+      "phone": "+27656657141",
+      "played": 5,
+      "wins": 3,
+      "draws": 0,
+      "losses": 2,
+      "points": 9,
+      "gf": 10,
+      "ga": 4,
+      "form": [
+        "L",
+        "W",
+        "L",
+        "W",
+        "W"
+      ],
+      "postponements": 20,
+      "suspended": false
+    },
+    {
       "name": "Ctaum",
       "username": "Ctaum-cpt",
       "phone": "+27764797158",
@@ -36,25 +57,6 @@
         "W",
         "W",
         "L"
-      ],
-      "postponements": 20,
-      "suspended": false
-    },
-    {
-      "name": "Zlatan",
-      "username": "Gillie11",
-      "phone": "+270660513301",
-      "played": 3,
-      "wins": 3,
-      "draws": 0,
-      "losses": 0,
-      "points": 9,
-      "gf": 8,
-      "ga": 3,
-      "form": [
-        "W",
-        "W",
-        "W"
       ],
       "postponements": 20,
       "suspended": false
@@ -99,20 +101,18 @@
       "suspended": false
     },
     {
-      "name": "El Tigre",
-      "username": "Nigelmj21",
-      "phone": "+27656657141",
-      "played": 4,
+      "name": "Zlatan",
+      "username": "Gillie11",
+      "phone": "+270660513301",
+      "played": 2,
       "wins": 2,
       "draws": 0,
-      "losses": 2,
+      "losses": 0,
       "points": 6,
       "gf": 6,
-      "ga": 4,
+      "ga": 2,
       "form": [
-        "L",
         "W",
-        "L",
         "W"
       ],
       "postponements": 20,
@@ -151,8 +151,8 @@
       "ga": 2,
       "form": [
         "D",
-        "D",
-        "W"
+        "W",
+        "D"
       ],
       "postponements": 20,
       "suspended": false
@@ -238,18 +238,19 @@
       "name": "Thandobhaze",
       "username": "Bhaze",
       "phone": "+27679687240",
-      "played": 4,
+      "played": 5,
       "wins": 0,
       "draws": 3,
-      "losses": 1,
+      "losses": 2,
       "points": 3,
       "gf": 1,
-      "ga": 3,
+      "ga": 7,
       "form": [
         "L",
         "D",
         "D",
-        "D"
+        "D",
+        "L"
       ],
       "postponements": 20,
       "suspended": false
@@ -274,6 +275,25 @@
       "suspended": false
     },
     {
+      "name": "Sailor",
+      "username": "Sailor",
+      "phone": "+27677514331",
+      "played": 3,
+      "wins": 0,
+      "draws": 1,
+      "losses": 2,
+      "points": 1,
+      "gf": 0,
+      "ga": 6,
+      "form": [
+        "D",
+        "L",
+        "L"
+      ],
+      "postponements": 20,
+      "suspended": false
+    },
+    {
       "name": "DJ Ronaldo ZA",
       "username": "djronaldoza",
       "phone": "+27711764627",
@@ -290,26 +310,6 @@
         "L"
       ],
       "postponements": 19,
-      "suspended": false
-    },
-    {
-      "name": "Sailor",
-      "username": "Sailor",
-      "phone": "+27677514331",
-      "played": 4,
-      "wins": 0,
-      "draws": 1,
-      "losses": 3,
-      "points": 1,
-      "gf": 1,
-      "ga": 8,
-      "form": [
-        "D",
-        "L",
-        "L",
-        "L"
-      ],
-      "postponements": 20,
       "suspended": false
     },
     {
@@ -348,6 +348,6 @@
       "suspended": false
     }
   ],
-  "updatedAt": "2026-05-08T16:37:07.147Z",
-  "matchesPlayed": 30
+  "updatedAt": "2026-05-08T17:28:24.446Z",
+  "matchesPlayed": 31
 }
