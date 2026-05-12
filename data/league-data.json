@@ -26,19 +26,20 @@
       "name": "Moosa",
       "username": "CRANK_",
       "phone": "+27699906125",
-      "played": 5,
+      "played": 6,
       "wins": 4,
       "draws": 1,
-      "losses": 0,
+      "losses": 1,
       "points": 13,
       "gf": 14,
-      "ga": 3,
+      "ga": 4,
       "form": [
         "W",
         "D",
         "W",
         "W",
-        "W"
+        "W",
+        "L"
       ],
       "postponements": 20,
       "suspended": false
@@ -261,6 +262,29 @@
       "suspended": false
     },
     {
+      "name": "SMANGALISO",
+      "username": "SMANGALISO",
+      "phone": "+27780070989",
+      "played": 7,
+      "wins": 2,
+      "draws": 1,
+      "losses": 4,
+      "points": 7,
+      "gf": 8,
+      "ga": 10,
+      "form": [
+        "L",
+        "L",
+        "D",
+        "L",
+        "L",
+        "W",
+        "W"
+      ],
+      "postponements": 19,
+      "suspended": false
+    },
+    {
       "name": "Sibusiso Makhanye❤️😎🇿🇦",
       "username": "YungboyShlime",
       "phone": "+27810878650",
@@ -280,28 +304,6 @@
         "L"
       ],
       "postponements": 20,
-      "suspended": false
-    },
-    {
-      "name": "SMANGALISO",
-      "username": "SMANGALISO",
-      "phone": "+27780070989",
-      "played": 6,
-      "wins": 1,
-      "draws": 1,
-      "losses": 4,
-      "points": 4,
-      "gf": 7,
-      "ga": 10,
-      "form": [
-        "L",
-        "L",
-        "D",
-        "L",
-        "L",
-        "W"
-      ],
-      "postponements": 19,
       "suspended": false
     },
     {
@@ -389,6 +391,6 @@
       "suspended": false
     }
   ],
-  "updatedAt": "2026-05-12T08:33:42.539Z",
-  "matchesPlayed": 50
+  "updatedAt": "2026-05-12T15:56:27.037Z",
+  "matchesPlayed": 51
 }
