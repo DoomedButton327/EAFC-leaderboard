@@ -1,24 +1,25 @@
 {
   "players": [
     {
-      "name": "XWRLD 🕴🏼",
-      "username": "XWRLD_REAPERS",
-      "phone": "+27750656258",
-      "played": 5,
-      "wins": 5,
-      "draws": 0,
+      "name": "mansur",
+      "username": "ICONIC-CLUB",
+      "phone": "+255616502631",
+      "played": 6,
+      "wins": 4,
+      "draws": 2,
       "losses": 0,
-      "points": 15,
-      "gf": 8,
-      "ga": 1,
+      "points": 14,
+      "gf": 12,
+      "ga": 2,
       "form": [
-        "W",
+        "D",
+        "D",
         "W",
         "W",
         "W",
         "W"
       ],
-      "postponements": 14,
+      "postponements": 19,
       "suspended": false
     },
     {
@@ -85,25 +86,24 @@
       "suspended": false
     },
     {
-      "name": "mansur",
-      "username": "ICONIC-CLUB",
-      "phone": "+255616502631",
-      "played": 6,
-      "wins": 3,
-      "draws": 2,
+      "name": "XWRLD 🕴🏼",
+      "username": "XWRLD_REAPERS",
+      "phone": "+27750656258",
+      "played": 5,
+      "wins": 4,
+      "draws": 0,
       "losses": 1,
-      "points": 11,
-      "gf": 11,
-      "ga": 3,
+      "points": 12,
+      "gf": 7,
+      "ga": 2,
       "form": [
-        "D",
-        "D",
+        "W",
+        "L",
         "W",
         "W",
-        "W",
-        "L"
+        "W"
       ],
-      "postponements": 19,
+      "postponements": 14,
       "suspended": false
     },
     {
@@ -389,6 +389,6 @@
       "suspended": false
     }
   ],
-  "updatedAt": "2026-05-12T08:26:19.234Z",
+  "updatedAt": "2026-05-12T08:33:42.539Z",
   "matchesPlayed": 50
 }
