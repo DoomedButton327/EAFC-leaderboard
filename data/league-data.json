@@ -1,6 +1,101 @@
 {
   "players": [
     {
+      "name": "Moosa",
+      "username": "CRANK_",
+      "phone": "+27699906125",
+      "played": 7,
+      "wins": 5,
+      "draws": 1,
+      "losses": 1,
+      "points": 16,
+      "gf": 17,
+      "ga": 4,
+      "form": [
+        "W",
+        "D",
+        "W",
+        "W",
+        "W",
+        "L",
+        "W"
+      ],
+      "postponements": 20,
+      "suspended": false
+    },
+    {
+      "name": "Dilibo👑",
+      "username": "DiliboL",
+      "phone": "+27760348136",
+      "played": 8,
+      "wins": 5,
+      "draws": 1,
+      "losses": 2,
+      "points": 16,
+      "gf": 16,
+      "ga": 8,
+      "form": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "L",
+        "W",
+        "W",
+        "W"
+      ],
+      "postponements": 16,
+      "suspended": false
+    },
+    {
+      "name": "Ctaum",
+      "username": "Ctaum-cpt",
+      "phone": "+27764797158",
+      "played": 9,
+      "wins": 5,
+      "draws": 0,
+      "losses": 4,
+      "points": 15,
+      "gf": 19,
+      "ga": 8,
+      "form": [
+        "W",
+        "W",
+        "W",
+        "L",
+        "L",
+        "L",
+        "L",
+        "W",
+        "W"
+      ],
+      "postponements": 20,
+      "suspended": false
+    },
+    {
+      "name": "Reginald Frank Thornton",
+      "username": "RFT07",
+      "phone": "+27820658330",
+      "played": 7,
+      "wins": 5,
+      "draws": 0,
+      "losses": 2,
+      "points": 15,
+      "gf": 13,
+      "ga": 8,
+      "form": [
+        "W",
+        "W",
+        "W",
+        "L",
+        "W",
+        "L",
+        "W"
+      ],
+      "postponements": 19,
+      "suspended": false
+    },
+    {
       "name": "mansur",
       "username": "ICONIC-CLUB",
       "phone": "+255616502631",
@@ -23,28 +118,6 @@
       "suspended": false
     },
     {
-      "name": "Moosa",
-      "username": "CRANK_",
-      "phone": "+27699906125",
-      "played": 6,
-      "wins": 4,
-      "draws": 1,
-      "losses": 1,
-      "points": 13,
-      "gf": 14,
-      "ga": 4,
-      "form": [
-        "W",
-        "D",
-        "W",
-        "W",
-        "W",
-        "L"
-      ],
-      "postponements": 20,
-      "suspended": false
-    },
-    {
       "name": "Zlatan",
       "username": "Gillie11",
       "phone": "+270660513301",
@@ -62,28 +135,7 @@
         "D",
         "W"
       ],
-      "postponements": 19,
-      "suspended": false
-    },
-    {
-      "name": "Reginald Frank Thornton",
-      "username": "RFT07",
-      "phone": "+27820658330",
-      "played": 5,
-      "wins": 4,
-      "draws": 0,
-      "losses": 1,
-      "points": 12,
-      "gf": 10,
-      "ga": 5,
-      "form": [
-        "W",
-        "W",
-        "W",
-        "L",
-        "W"
-      ],
-      "postponements": 19,
+      "postponements": 18,
       "suspended": false
     },
     {
@@ -104,7 +156,7 @@
         "W",
         "W"
       ],
-      "postponements": 14,
+      "postponements": 12,
       "suspended": false
     },
     {
@@ -126,29 +178,6 @@
         "L",
         "L",
         "W"
-      ],
-      "postponements": 20,
-      "suspended": false
-    },
-    {
-      "name": "Ctaum",
-      "username": "Ctaum-cpt",
-      "phone": "+27764797158",
-      "played": 7,
-      "wins": 3,
-      "draws": 0,
-      "losses": 4,
-      "points": 9,
-      "gf": 13,
-      "ga": 8,
-      "form": [
-        "W",
-        "W",
-        "W",
-        "L",
-        "L",
-        "L",
-        "L"
       ],
       "postponements": 20,
       "suspended": false
@@ -222,43 +251,23 @@
       "name": "🅿️🅾️🕉️🅱️🅰️",
       "username": "RoyalAM",
       "phone": "+27682987402",
-      "played": 6,
+      "played": 7,
       "wins": 2,
       "draws": 2,
-      "losses": 2,
+      "losses": 3,
       "points": 8,
       "gf": 7,
-      "ga": 7,
+      "ga": 10,
       "form": [
         "W",
         "L",
         "D",
         "D",
         "L",
-        "W"
-      ],
-      "postponements": 20,
-      "suspended": false
-    },
-    {
-      "name": "Dilibo👑",
-      "username": "DiliboL",
-      "phone": "+27760348136",
-      "played": 5,
-      "wins": 2,
-      "draws": 1,
-      "losses": 2,
-      "points": 7,
-      "gf": 7,
-      "ga": 8,
-      "form": [
-        "L",
-        "W",
-        "D",
         "W",
         "L"
       ],
-      "postponements": 16,
+      "postponements": 20,
       "suspended": false
     },
     {
@@ -288,18 +297,19 @@
       "name": "Sibusiso Makhanye❤️😎🇿🇦",
       "username": "YungboyShlime",
       "phone": "+27810878650",
-      "played": 6,
+      "played": 7,
       "wins": 1,
       "draws": 2,
-      "losses": 3,
+      "losses": 4,
       "points": 5,
       "gf": 7,
-      "ga": 9,
+      "ga": 12,
       "form": [
         "W",
         "L",
         "D",
         "D",
+        "L",
         "L",
         "L"
       ],
@@ -310,18 +320,19 @@
       "name": "Thandobhaze",
       "username": "Bhaze",
       "phone": "+27679687240",
-      "played": 6,
+      "played": 7,
       "wins": 0,
       "draws": 3,
-      "losses": 3,
+      "losses": 4,
       "points": 3,
       "gf": 1,
-      "ga": 10,
+      "ga": 13,
       "form": [
         "L",
         "D",
         "D",
         "D",
+        "L",
         "L",
         "L"
       ],
@@ -373,16 +384,19 @@
       "name": "DJ THABISO KOMAKO",
       "username": "Kloutt",
       "phone": "+27792135785",
-      "played": 5,
+      "played": 8,
       "wins": 0,
       "draws": 1,
-      "losses": 4,
+      "losses": 7,
       "points": 1,
       "gf": 0,
-      "ga": 16,
+      "ga": 25,
       "form": [
         "L",
         "D",
+        "L",
+        "L",
+        "L",
         "L",
         "L",
         "L"
@@ -391,6 +405,6 @@
       "suspended": false
     }
   ],
-  "updatedAt": "2026-05-12T15:56:27.037Z",
-  "matchesPlayed": 51
+  "updatedAt": "2026-05-13T06:24:35.241Z",
+  "matchesPlayed": 63
 }
