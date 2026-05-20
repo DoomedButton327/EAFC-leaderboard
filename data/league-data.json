@@ -4,17 +4,17 @@
       "name": "Moosa",
       "username": "CRANK_",
       "phone": "+27699906125",
-      "played": 13,
-      "wins": 11,
+      "played": 14,
+      "wins": 12,
       "draws": 1,
       "losses": 1,
-      "points": 34,
-      "gf": 31,
+      "points": 37,
+      "gf": 34,
       "ga": 5,
       "form": [
         "W",
-        "W",
         "L",
+        "W",
         "W",
         "W",
         "W",
@@ -238,15 +238,14 @@
       "name": "Lucky7",
       "username": "CodeTalker",
       "phone": "+27684880622",
-      "played": 12,
+      "played": 13,
       "wins": 4,
       "draws": 4,
-      "losses": 4,
+      "losses": 5,
       "points": 16,
       "gf": 10,
-      "ga": 15,
+      "ga": 18,
       "form": [
-        "W",
         "D",
         "L",
         "L",
@@ -255,7 +254,8 @@
         "L",
         "D",
         "D",
-        "W"
+        "W",
+        "L"
       ],
       "postponements": 19,
       "suspended": false
@@ -465,6 +465,6 @@
       "suspended": false
     }
   ],
-  "updatedAt": "2026-05-20T02:52:05.562Z",
-  "matchesPlayed": 109
+  "updatedAt": "2026-05-20T11:16:23.645Z",
+  "matchesPlayed": 110
 }
