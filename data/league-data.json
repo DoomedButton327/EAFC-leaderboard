@@ -4,12 +4,12 @@
       "name": "Moosa",
       "username": "CRANK_",
       "phone": "+27699906125",
-      "played": 19,
-      "wins": 16,
+      "played": 20,
+      "wins": 17,
       "draws": 1,
       "losses": 2,
-      "points": 49,
-      "gf": 50,
+      "points": 52,
+      "gf": 51,
       "ga": 9,
       "form": [
         "W",
@@ -18,8 +18,8 @@
         "W",
         "W",
         "W",
-        "W",
         "L",
+        "W",
         "W",
         "W"
       ],
@@ -30,15 +30,14 @@
       "name": "Ctaum",
       "username": "Ctaum-cpt",
       "phone": "+27764797158",
-      "played": 22,
+      "played": 23,
       "wins": 15,
       "draws": 1,
-      "losses": 6,
+      "losses": 7,
       "points": 46,
-      "gf": 54,
-      "ga": 13,
+      "gf": 55,
+      "ga": 16,
       "form": [
-        "W",
         "W",
         "L",
         "W",
@@ -47,7 +46,8 @@
         "W",
         "D",
         "W",
-        "W"
+        "W",
+        "L"
       ],
       "postponements": 20,
       "suspended": false
@@ -56,20 +56,20 @@
       "name": "Reginald Frank Thornton",
       "username": "RFT07",
       "phone": "+27820658330",
-      "played": 18,
-      "wins": 14,
+      "played": 19,
+      "wins": 15,
       "draws": 1,
       "losses": 3,
-      "points": 43,
-      "gf": 47,
-      "ga": 14,
+      "points": 46,
+      "gf": 50,
+      "ga": 15,
       "form": [
-        "W",
         "L",
         "W",
         "W",
         "W",
         "D",
+        "W",
         "W",
         "W",
         "W",
@@ -82,15 +82,14 @@
       "name": "El Tigre",
       "username": "Nigelmj21",
       "phone": "+27656657141",
-      "played": 17,
+      "played": 18,
       "wins": 14,
-      "draws": 0,
+      "draws": 1,
       "losses": 3,
-      "points": 42,
-      "gf": 40,
-      "ga": 11,
+      "points": 43,
+      "gf": 41,
+      "ga": 12,
       "form": [
-        "L",
         "W",
         "W",
         "W",
@@ -99,7 +98,8 @@
         "W",
         "W",
         "W",
-        "W"
+        "W",
+        "D"
       ],
       "postponements": 12,
       "suspended": false
@@ -136,11 +136,11 @@
       "phone": "+255616502631",
       "played": 20,
       "wins": 8,
-      "draws": 7,
-      "losses": 5,
-      "points": 31,
+      "draws": 6,
+      "losses": 6,
+      "points": 30,
       "gf": 29,
-      "ga": 17,
+      "ga": 18,
       "form": [
         "L",
         "W",
@@ -151,7 +151,7 @@
         "L",
         "W",
         "D",
-        "D"
+        "L"
       ],
       "postponements": 19,
       "suspended": false
@@ -179,22 +179,21 @@
         "L",
         "D"
       ],
-      "postponements": 8,
+      "postponements": 7,
       "suspended": false
     },
     {
       "name": "SMANGALISO",
       "username": "SMANGALISO",
       "phone": "+27780070989",
-      "played": 18,
+      "played": 19,
       "wins": 8,
-      "draws": 4,
+      "draws": 5,
       "losses": 6,
-      "points": 28,
-      "gf": 22,
-      "ga": 17,
+      "points": 29,
+      "gf": 23,
+      "ga": 18,
       "form": [
-        "D",
         "W",
         "L",
         "W",
@@ -203,6 +202,7 @@
         "W",
         "D",
         "W",
+        "D",
         "D"
       ],
       "postponements": 17,
@@ -257,22 +257,21 @@
         "L",
         "W"
       ],
-      "postponements": 20,
+      "postponements": 19,
       "suspended": false
     },
     {
       "name": "Lucky7",
       "username": "CodeTalker",
       "phone": "+27684880622",
-      "played": 20,
+      "played": 21,
       "wins": 4,
-      "draws": 7,
+      "draws": 8,
       "losses": 9,
-      "points": 19,
+      "points": 20,
       "gf": 10,
       "ga": 28,
       "form": [
-        "D",
         "W",
         "L",
         "D",
@@ -281,7 +280,8 @@
         "D",
         "L",
         "L",
-        "L"
+        "L",
+        "D"
       ],
       "postponements": 19,
       "suspended": false
@@ -313,6 +313,58 @@
       "suspended": false
     },
     {
+      "name": "Sailor",
+      "username": "Sailor",
+      "phone": "+27677514331",
+      "played": 19,
+      "wins": 3,
+      "draws": 6,
+      "losses": 10,
+      "points": 15,
+      "gf": 9,
+      "ga": 30,
+      "form": [
+        "W",
+        "L",
+        "L",
+        "D",
+        "D",
+        "W",
+        "D",
+        "L",
+        "D",
+        "D"
+      ],
+      "postponements": 18,
+      "suspended": false
+    },
+    {
+      "name": "Thandobhaze",
+      "username": "Bhaze",
+      "phone": "+27679687240",
+      "played": 23,
+      "wins": 2,
+      "draws": 9,
+      "losses": 12,
+      "points": 15,
+      "gf": 4,
+      "ga": 34,
+      "form": [
+        "D",
+        "W",
+        "L",
+        "L",
+        "L",
+        "D",
+        "D",
+        "L",
+        "L",
+        "D"
+      ],
+      "postponements": 20,
+      "suspended": false
+    },
+    {
       "name": "Zlatan",
       "username": "Gillie11",
       "phone": "+270660513301",
@@ -333,58 +385,6 @@
       ],
       "postponements": 0,
       "suspended": true
-    },
-    {
-      "name": "Sailor",
-      "username": "Sailor",
-      "phone": "+27677514331",
-      "played": 18,
-      "wins": 3,
-      "draws": 5,
-      "losses": 10,
-      "points": 14,
-      "gf": 9,
-      "ga": 30,
-      "form": [
-        "L",
-        "W",
-        "L",
-        "L",
-        "D",
-        "D",
-        "W",
-        "D",
-        "L",
-        "D"
-      ],
-      "postponements": 18,
-      "suspended": false
-    },
-    {
-      "name": "Thandobhaze",
-      "username": "Bhaze",
-      "phone": "+27679687240",
-      "played": 22,
-      "wins": 2,
-      "draws": 8,
-      "losses": 12,
-      "points": 14,
-      "gf": 4,
-      "ga": 34,
-      "form": [
-        "L",
-        "D",
-        "W",
-        "L",
-        "L",
-        "L",
-        "D",
-        "D",
-        "L",
-        "L"
-      ],
-      "postponements": 20,
-      "suspended": false
     },
     {
       "name": "Sibusiso Makhanye❤️😎🇿🇦",
@@ -465,6 +465,6 @@
       "suspended": false
     }
   ],
-  "updatedAt": "2026-05-29T06:30:10.960Z",
-  "matchesPlayed": 149
+  "updatedAt": "2026-05-29T22:38:50.754Z",
+  "matchesPlayed": 158
 }
