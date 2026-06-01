@@ -5,11 +5,11 @@
       "username": "CRANK_",
       "phone": "+27699906125",
       "played": 21,
-      "wins": 16,
-      "draws": 3,
+      "wins": 18,
+      "draws": 1,
       "losses": 2,
-      "points": 51,
-      "gf": 44,
+      "points": 55,
+      "gf": 50,
       "ga": 9,
       "form": [
         "W",
@@ -20,8 +20,8 @@
         "W",
         "W",
         "W",
-        "D",
-        "D"
+        "W",
+        "W"
       ],
       "postponements": 15,
       "suspended": false
@@ -84,11 +84,11 @@
       "phone": "+27764797158",
       "played": 22,
       "wins": 13,
-      "draws": 2,
-      "losses": 7,
-      "points": 41,
+      "draws": 1,
+      "losses": 8,
+      "points": 40,
       "gf": 48,
-      "ga": 16,
+      "ga": 19,
       "form": [
         "L",
         "W",
@@ -98,7 +98,7 @@
         "W",
         "W",
         "L",
-        "D",
+        "L",
         "D"
       ],
       "postponements": 20,
@@ -110,21 +110,21 @@
       "phone": "+27750656258",
       "played": 22,
       "wins": 11,
-      "draws": 5,
-      "losses": 6,
-      "points": 38,
+      "draws": 4,
+      "losses": 7,
+      "points": 37,
       "gf": 28,
-      "ga": 9,
+      "ga": 12,
       "form": [
         "L",
         "L",
         "W",
         "W",
+        "L",
         "D",
         "D",
         "W",
         "L",
-        "D",
         "D"
       ],
       "postponements": 7,
@@ -228,8 +228,8 @@
         "D",
         "D",
         "D",
-        "W",
-        "D"
+        "D",
+        "W"
       ],
       "postponements": 17,
       "suspended": false
@@ -354,8 +354,8 @@
         "D",
         "D",
         "D",
-        "L",
-        "D"
+        "D",
+        "L"
       ],
       "postponements": 20,
       "suspended": false
@@ -465,6 +465,6 @@
       "suspended": true
     }
   ],
-  "updatedAt": "2026-06-01T22:19:24.717Z",
+  "updatedAt": "2026-06-01T22:23:27.277Z",
   "matchesPlayed": 176
 }
