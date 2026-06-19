@@ -186,21 +186,21 @@
       "name": "XWRLD 🕴🏼",
       "username": "XWRLD_REAPERS",
       "phone": "+27750656258",
-      "played": 31,
+      "played": 32,
       "wins": 9,
       "draws": 11,
-      "losses": 11,
+      "losses": 12,
       "points": 38,
       "gf": 24,
-      "ga": 24,
+      "ga": 25,
       "form": [
-        "D",
         "D",
         "D",
         "L",
         "D",
         "D",
         "D",
+        "L",
         "L",
         "L",
         "L"
@@ -313,6 +313,30 @@
       "suspended": false
     },
     {
+      "name": "Junaid",
+      "username": "BreadNTea-RSA",
+      "phone": "+27687182477",
+      "played": 8,
+      "wins": 7,
+      "draws": 1,
+      "losses": 0,
+      "points": 22,
+      "gf": 16,
+      "ga": 5,
+      "form": [
+        "W",
+        "D",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      "postponements": 18,
+      "suspended": false
+    },
+    {
       "name": "Sibusiso Makhanye❤️😎🇿🇦",
       "username": "YungboyShlime",
       "phone": "+27810878650",
@@ -362,29 +386,6 @@
         "L"
       ],
       "postponements": 16,
-      "suspended": false
-    },
-    {
-      "name": "Junaid",
-      "username": "BreadNTea-RSA",
-      "phone": "+27687182477",
-      "played": 7,
-      "wins": 6,
-      "draws": 1,
-      "losses": 0,
-      "points": 19,
-      "gf": 15,
-      "ga": 5,
-      "form": [
-        "W",
-        "D",
-        "W",
-        "W",
-        "W",
-        "W",
-        "W"
-      ],
-      "postponements": 18,
       "suspended": false
     },
     {
@@ -481,6 +482,6 @@
       "suspended": false
     }
   ],
-  "updatedAt": "2026-06-19T23:06:17.199Z",
-  "matchesPlayed": 265
+  "updatedAt": "2026-06-19T23:07:30.339Z",
+  "matchesPlayed": 266
 }
