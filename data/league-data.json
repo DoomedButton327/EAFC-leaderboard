@@ -206,7 +206,7 @@
         "L"
       ],
       "postponements": 7,
-      "suspended": false
+      "suspended": true
     },
     {
       "name": "mansur",
@@ -482,6 +482,6 @@
       "suspended": false
     }
   ],
-  "updatedAt": "2026-06-19T23:07:30.339Z",
+  "updatedAt": "2026-06-19T23:40:06.930Z",
   "matchesPlayed": 266
 }
