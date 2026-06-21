@@ -4,11 +4,11 @@
       "name": "Moosa",
       "username": "CRANK_",
       "phone": "+27699906125",
-      "played": 33,
-      "wins": 28,
+      "played": 32,
+      "wins": 27,
       "draws": 2,
       "losses": 3,
-      "points": 86,
+      "points": 83,
       "gf": 83,
       "ga": 16,
       "form": [
@@ -483,6 +483,6 @@
       "suspended": true
     }
   ],
-  "updatedAt": "2026-06-21T00:49:32.137Z",
+  "updatedAt": "2026-06-21T00:51:14.279Z",
   "matchesPlayed": 273
 }
