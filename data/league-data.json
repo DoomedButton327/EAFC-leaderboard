@@ -23,7 +23,7 @@
         "D",
         "D"
       ],
-      "postponements": 10,
+      "postponements": 11,
       "suspended": false
     },
     {
@@ -46,8 +46,8 @@
         "L",
         "L",
         "W",
-        "L",
-        "D"
+        "D",
+        "L"
       ],
       "postponements": 8,
       "suspended": false
@@ -110,11 +110,11 @@
       "phone": "+27786218748",
       "played": 35,
       "wins": 15,
-      "draws": 6,
-      "losses": 14,
-      "points": 51,
+      "draws": 5,
+      "losses": 15,
+      "points": 50,
       "gf": 48,
-      "ga": 31,
+      "ga": 32,
       "form": [
         "W",
         "W",
@@ -125,7 +125,7 @@
         "W",
         "W",
         "L",
-        "D"
+        "L"
       ],
       "postponements": 19,
       "suspended": false
@@ -134,15 +134,14 @@
       "name": "Dilibo👑",
       "username": "DiliboL",
       "phone": "+27760348136",
-      "played": 32,
+      "played": 33,
       "wins": 12,
-      "draws": 10,
+      "draws": 11,
       "losses": 10,
-      "points": 46,
+      "points": 47,
       "gf": 35,
       "ga": 31,
       "form": [
-        "D",
         "L",
         "D",
         "D",
@@ -151,6 +150,7 @@
         "D",
         "L",
         "L",
+        "D",
         "D"
       ],
       "postponements": 15,
@@ -213,11 +213,11 @@
       "username": "ICONIC-CLUB",
       "phone": "+255616502631",
       "played": 32,
-      "wins": 7,
-      "draws": 14,
+      "wins": 8,
+      "draws": 13,
       "losses": 11,
-      "points": 35,
-      "gf": 25,
+      "points": 37,
+      "gf": 26,
       "ga": 28,
       "form": [
         "W",
@@ -229,7 +229,7 @@
         "D",
         "L",
         "L",
-        "D"
+        "W"
       ],
       "postponements": 19,
       "suspended": false
@@ -264,15 +264,14 @@
       "name": "🅿️🅾️🕉️🅱️🅰️",
       "username": "RoyalAM",
       "phone": "+27682987402",
-      "played": 32,
+      "played": 33,
       "wins": 4,
-      "draws": 14,
+      "draws": 15,
       "losses": 14,
-      "points": 26,
+      "points": 27,
       "gf": 12,
       "ga": 43,
       "form": [
-        "D",
         "L",
         "D",
         "D",
@@ -280,6 +279,7 @@
         "D",
         "L",
         "L",
+        "D",
         "D",
         "D"
       ],
@@ -485,6 +485,6 @@
       "suspended": true
     }
   ],
-  "updatedAt": "2026-06-24T07:46:33.181Z",
-  "matchesPlayed": 283
+  "updatedAt": "2026-06-24T22:31:00.772Z",
+  "matchesPlayed": 284
 }
