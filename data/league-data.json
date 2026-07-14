@@ -35,9 +35,10 @@
       "draws": 7,
       "losses": 5,
       "points": 103,
-      "gf": 99,
+      "gf": 96,
       "ga": 30,
       "form": [
+        "W",
         "W",
         "W",
         "W",
@@ -186,23 +187,23 @@
       "name": "mansur",
       "username": "ICONIC-CLUB",
       "phone": "+255616502631",
-      "played": 44,
+      "played": 43,
       "wins": 8,
       "draws": 20,
-      "losses": 16,
+      "losses": 15,
       "points": 44,
       "gf": 27,
-      "ga": 42,
+      "ga": 39,
       "form": [
-        "L",
         "D",
         "L",
         "D",
         "L",
         "D",
-        "D",
-        "D",
         "L",
+        "D",
+        "D",
+        "D",
         "L"
       ],
       "postponements": 19,
@@ -491,6 +492,6 @@
       "suspended": true
     }
   ],
-  "updatedAt": "2026-07-14T21:34:41.407Z",
-  "matchesPlayed": 354
+  "updatedAt": "2026-07-14T22:00:56.127Z",
+  "matchesPlayed": 356
 }
