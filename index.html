@@ -320,6 +320,27 @@
 
             .dt-name     { color:var(--text); font-weight:500; font-size:0.82rem; }
             .dt-username { font-size:0.62rem; color:var(--muted); margin-top:2px; }
+            .postponement-badge{
+                display:inline-flex;
+                align-items:center;
+                gap:5px;
+                 margin-top:6px;
+                padding:3px 8px;
+                border-radius:999px;
+
+                background:rgba(245,158,11,.12);
+                border:1px solid rgba(245,158,11,.35);
+
+                color:#f59e0b;
+                font-family:'JetBrains Mono',monospace;
+                font-size:.58rem;
+                font-weight:700;
+                white-space:nowrap;
+                }
+
+            .postponement-badge i{
+                font-size:.55rem;
+                }
             .pts-cell    { color:#c4b5fd; font-weight:700; font-size:0.92rem; }
 
             .form-badges { display:flex; gap:3px; justify-content:center; }
@@ -457,7 +478,7 @@ async function loadData() {
         const data = await res.json();
         renderStandings(data.players || []);
         const lu = document.getElementById('last-updated');
-        lu.textContent = data.lastUpdated
+        lu.textContent = data.updatedAt
             ? new Date(data.lastUpdated).toLocaleString('en-ZA', { dateStyle: 'medium', timeStyle: 'short' })
             : new Date().toLocaleTimeString('en-ZA');
     } catch (e) {
@@ -521,6 +542,11 @@ function renderStandings(players) {
             <div class="pc-info">
                 <div class="pc-name">${esc(p.name)}</div>
                 <div class="pc-username">${esc(p.username)}</div>
+
+<div class="postponement-badge">
+    <i class="fas fa-hourglass-half"></i>
+    ${p.postponements || 0} Postponements
+</div>
                 <div class="pc-stats">
                     <div class="pc-stat">P <span>${p.played||0}</span></div>
                     <div class="pc-stat">W <span>${p.wins||0}</span></div>
@@ -539,56 +565,86 @@ function renderStandings(players) {
         </div>`;
     }).join('');
 
-    // ---- DESKTOP TABLE ROWS ----
-    const tableRows = sorted.map((p, i) => {
-        const rank     = i + 1;
-        const posClass = rank <= 3 ? `pos-${rank}` : '';
-        const zone     = rank <= 3 ? 'zone-champ' : (sorted.length >= 5 && rank >= sorted.length - 1 ? 'zone-danger' : '');
-        const gd       = (p.gf||0) - (p.ga||0);
-        const gdStr    = gd > 0 ? `<span class="gd-pos">+${gd}</span>` : gd < 0 ? `<span class="gd-neg">${gd}</span>` : `<span>0</span>`;
-        return `
-        <tr class="${zone}">
-            <td><span class="pos-badge ${posClass}">${rank}</span></td>
-            <td><div class="dt-name">${esc(p.name)}</div><div class="dt-username">${esc(p.username)}</div></td>
-            <td>${p.played||0}</td>
-            <td>${p.wins||0}</td>
-            <td>${p.draws||0}</td>
-            <td>${p.losses||0}</td>
-            <td>${p.gf||0}</td>
-            <td>${p.ga||0}</td>
-            <td>${gdStr}</td>
-            <td class="pts-cell">${p.points||0}</td>
-            <td><div class="form-badges">${buildFormDesktop(p.form||[])}</div></td>
-        </tr>`;
-    }).join('');
+// ---- DESKTOP TABLE ROWS ----
+const tableRows = sorted.map((p, i) => {
+    const rank     = i + 1;
+    const posClass = rank <= 3 ? `pos-${rank}` : '';
+    const zone     = rank <= 3 ? 'zone-champ' : (sorted.length >= 5 && rank >= sorted.length - 1 ? 'zone-danger' : '');
+    const gd       = (p.gf || 0) - (p.ga || 0);
+    const gdStr    = gd > 0
+        ? `<span class="gd-pos">+${gd}</span>`
+        : gd < 0
+            ? `<span class="gd-neg">${gd}</span>`
+            : `<span>0</span>`;
 
-    const legendDanger = sorted.length >= 5
-        ? '<div class="legend-item"><div class="legend-dot danger"></div> Relegation zone</div>' : '';
+    return `
+    <tr class="${zone}">
+        <td>
+            <span class="pos-badge ${posClass}">${rank}</span>
+        </td>
 
-    root.innerHTML = `
-        ${podiumHTML}
-        <div class="section-label"><i class="fas fa-trophy"></i> STANDINGS · ${sorted.length} PLAYERS</div>
-        <div class="player-list">${mobileCards}</div>
-        <div class="desktop-table-wrap">
-            <table>
-                <thead>
-                    <tr>
-                        <th>POS</th><th>PLAYER</th>
-                        <th title="Played">P</th><th title="Wins">W</th>
-                        <th title="Draws">D</th><th title="Losses">L</th>
-                        <th title="Goals For">GF</th><th title="Goals Against">GA</th>
-                        <th title="Goal Difference">GD</th><th title="Points">PTS</th>
-                        <th title="Form (last 5)">FORM</th>
-                    </tr>
-                </thead>
-                <tbody>${tableRows}</tbody>
-            </table>
+        <td>
+            <div class="dt-name">${esc(p.name)}</div>
+            <div class="dt-username">@${esc(p.username)}</div>
+
+            <div class="postponement-badge">
+                <i class="fas fa-calendar-alt"></i>
+                ${p.postponements || 0} Postponements
+            </div>
+        </td>
+
+        <td>${p.played || 0}</td>
+        <td>${p.wins || 0}</td>
+        <td>${p.draws || 0}</td>
+        <td>${p.losses || 0}</td>
+        <td>${p.gf || 0}</td>
+        <td>${p.ga || 0}</td>
+        <td>${gdStr}</td>
+        <td class="pts-cell">${p.points || 0}</td>
+        <td><div class="form-badges">${buildFormDesktop(p.form || [])}</div></td>
+    </tr>`;
+}).join('');
+
+const legendDanger = sorted.length >= 5
+    ? '<div class="legend-item"><div class="legend-dot danger"></div> Relegation zone</div>'
+    : '';
+
+root.innerHTML = `
+    ${podiumHTML}
+    <div class="section-label">
+        <i class="fas fa-trophy"></i> STANDINGS · ${sorted.length} PLAYERS
+    </div>
+
+    <div class="player-list">${mobileCards}</div>
+
+    <div class="desktop-table-wrap">
+        <table>
+            <thead>
+                <tr>
+                    <th>POS</th>
+                    <th>PLAYER</th>
+                    <th title="Played">P</th>
+                    <th title="Wins">W</th>
+                    <th title="Draws">D</th>
+                    <th title="Losses">L</th>
+                    <th title="Goals For">GF</th>
+                    <th title="Goals Against">GA</th>
+                    <th title="Goal Difference">GD</th>
+                    <th title="Points">PTS</th>
+                    <th title="Form (last 5)">FORM</th>
+                </tr>
+            </thead>
+            <tbody>${tableRows}</tbody>
+        </table>
+    </div>
+
+    <div class="legend">
+        <div class="legend-item">
+            <div class="legend-dot champ"></div>
+            Championship zone
         </div>
-        <div class="legend">
-            <div class="legend-item"><div class="legend-dot champ"></div> Championship zone</div>
-            ${legendDanger}
-        </div>`;
-}
+        ${legendDanger}
+    </div>`;
 
 // ---- HELPERS ----
 function buildFormMobile(form) {
