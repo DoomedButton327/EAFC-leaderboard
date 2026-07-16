@@ -320,27 +320,30 @@
 
             .dt-name     { color:var(--text); font-weight:500; font-size:0.82rem; }
             .dt-username { font-size:0.62rem; color:var(--muted); margin-top:2px; }
-            .postponement-badge{
-                display:inline-flex;
-                align-items:center;
-                gap:5px;
-                 margin-top:6px;
-                padding:3px 8px;
-                border-radius:999px;
+           .postponement-badge{
+    display:inline-flex;
+    align-items:center;
+    gap:4px;
 
-                background:rgba(245,158,11,.12);
-                border:1px solid rgba(245,158,11,.35);
+    margin-top:4px;
+    padding:2px 6px;
 
-                color:#f59e0b;
-                font-family:'JetBrains Mono',monospace;
-                font-size:.58rem;
-                font-weight:700;
-                white-space:nowrap;
-                }
+    border-radius:6px;
 
-            .postponement-badge i{
-                font-size:.55rem;
-                }
+    background:rgba(245,158,11,.08);
+    border:1px solid rgba(245,158,11,.18);
+
+    color:#cbd5e1;
+    font-family:inherit;
+    font-size:.52rem;
+    font-weight:500;
+    line-height:1;
+}
+
+.postponement-badge i{
+    color:#f59e0b;
+    font-size:.5rem;
+}
             .pts-cell    { color:#c4b5fd; font-weight:700; font-size:0.92rem; }
 
             .form-badges { display:flex; gap:3px; justify-content:center; }
@@ -548,7 +551,7 @@ function renderStandings(players) {
 
 <div class="postponement-badge">
     <i class="fas fa-hourglass-half"></i>
-    ${p.postponements || 0} Postponements
+    PP: ${p.postponements || 0}
 </div>
                 <div class="pc-stats">
                     <div class="pc-stat">P <span>${p.played||0}</span></div>
