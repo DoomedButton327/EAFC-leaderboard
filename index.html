@@ -479,8 +479,11 @@ async function loadData() {
         renderStandings(data.players || []);
         const lu = document.getElementById('last-updated');
         lu.textContent = data.updatedAt
-            ? new Date(data.lastUpdated).toLocaleString('en-ZA', { dateStyle: 'medium', timeStyle: 'short' })
-            : new Date().toLocaleTimeString('en-ZA');
+        ? new Date(data.updatedAt).toLocaleString('en-ZA', {
+        dateStyle: 'medium',
+        timeStyle: 'short'
+      })
+    : new Date().toLocaleTimeString('en-ZA');
     } catch (e) {
         document.getElementById('standings-root').innerHTML =
             '<div class="empty-state"><i class="fas fa-satellite-dish"></i>Could not load league data.<br>Check back soon.</div>';
@@ -661,6 +664,8 @@ function buildFormDesktop(form) {
 
 function esc(str) {
     return String(str||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
 }
 
 // ---- INIT ----
