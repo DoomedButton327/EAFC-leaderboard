@@ -518,7 +518,7 @@
         "L"
       ],
       "postponements": 0,
-      "suspended": false
+      "suspended": true
     }
   ],
   "results": [
@@ -3523,6 +3523,6 @@
       "date": "2026-07-14"
     }
   ],
-  "updatedAt": "2026-07-17T17:59:22.402Z",
+  "updatedAt": "2026-07-17T18:00:56.461Z",
   "matchesPlayed": 375
 }
