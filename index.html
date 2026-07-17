@@ -167,6 +167,106 @@
         .section-label::after { content:''; flex:1; height:1px; background:var(--border); }
 
         /* ============================================================
+           TABS
+           ============================================================ */
+        .tab-bar {
+            display: flex; gap: 6px; margin-bottom: 14px;
+            padding: 4px; border-radius: 14px;
+            background: var(--surface); border: 1px solid var(--border);
+            animation: fadeUp 0.4s ease 0.05s both;
+        }
+        .tab-btn {
+            flex: 1; display: flex; align-items: center; justify-content: center; gap: 7px;
+            padding: 9px 10px; border: none; border-radius: 10px;
+            background: transparent; color: var(--muted); cursor: pointer;
+            font-family: 'Syne', sans-serif; font-size: 0.74rem; font-weight: 700;
+            letter-spacing: 0.01em; transition: background 0.18s, color 0.18s;
+        }
+        .tab-btn i { font-size: 0.72rem; }
+        .tab-btn.active {
+            background: linear-gradient(135deg, rgba(139,92,246,0.22), rgba(56,189,248,0.12));
+            color: #e9e4ff;
+            box-shadow: inset 0 0 0 1px rgba(139,92,246,0.35);
+        }
+        .tab-btn:not(.active):hover { color: #cbd5e1; background: rgba(255,255,255,0.03); }
+
+        .tab-panel { animation: fadeUp 0.3s ease both; }
+
+        /* ============================================================
+           MATCH HISTORY — search + list
+           ============================================================ */
+        .history-search-wrap {
+            position: relative; display: flex; align-items: center;
+            margin-bottom: 14px;
+        }
+        .history-search-wrap > i.fa-magnifying-glass {
+            position: absolute; left: 14px; font-size: 0.72rem; color: var(--muted); pointer-events: none;
+        }
+        .history-search {
+            width: 100%; padding: 12px 38px 12px 36px; border-radius: 12px;
+            background: var(--surface); border: 1px solid var(--border);
+            color: var(--text); font-family: 'JetBrains Mono', monospace; font-size: 0.78rem;
+            outline: none; transition: border-color 0.18s, background 0.18s;
+        }
+        .history-search::placeholder { color: var(--muted); }
+        .history-search:focus { border-color: var(--border-hi); background: var(--surface-hi); }
+        .history-clear {
+            position: absolute; right: 8px; width: 26px; height: 26px;
+            display: flex; align-items: center; justify-content: center;
+            border: none; border-radius: 50%; background: rgba(255,255,255,0.06);
+            color: var(--muted); cursor: pointer; font-size: 0.7rem;
+        }
+        .history-clear:hover { background: rgba(255,255,255,0.1); color: var(--text); }
+
+        .history-summary {
+            display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+            padding: 12px 14px; border-radius: 12px; margin-bottom: 12px;
+            background: var(--surface); border: 1px solid var(--border);
+            animation: fadeUp 0.3s ease both;
+        }
+        .history-summary .hs-name {
+            font-family: 'Syne', sans-serif; font-weight: 700; font-size: 0.86rem; color: var(--text);
+        }
+        .history-summary .hs-record {
+            font-family: 'JetBrains Mono', monospace; font-size: 0.66rem; color: var(--muted);
+            display: flex; gap: 8px; margin-left: auto;
+        }
+        .hs-record .w { color: var(--win); } .hs-record .d { color: var(--draw); } .hs-record .l { color: var(--loss); }
+
+        .match-list { display: flex; flex-direction: column; gap: 7px; }
+
+        .match-card {
+            display: grid; grid-template-columns: 34px 1fr auto; align-items: center;
+            gap: 10px; padding: 11px 13px; border-radius: 12px;
+            background: var(--surface); border: 1px solid var(--border);
+            animation: fadeUp 0.3s ease both;
+        }
+        .match-card.mc-w { border-left: 3px solid var(--win); }
+        .match-card.mc-d { border-left: 3px solid var(--draw); }
+        .match-card.mc-l { border-left: 3px solid var(--loss); }
+
+        .mc-result {
+            width: 30px; height: 30px; border-radius: 9px;
+            display: flex; align-items: center; justify-content: center;
+            font-family: 'Orbitron', sans-serif; font-weight: 900; font-size: 0.72rem;
+        }
+        .mc-result.mc-w { background: rgba(16,185,129,0.15); color: var(--win); border: 1px solid rgba(16,185,129,0.3); }
+        .mc-result.mc-d { background: rgba(245,158,11,0.15); color: var(--draw); border: 1px solid rgba(245,158,11,0.3); }
+        .mc-result.mc-l { background: rgba(239,68,68,0.15); color: var(--loss); border: 1px solid rgba(239,68,68,0.3); }
+
+        .mc-matchup {
+            font-family: 'JetBrains Mono', monospace; font-size: 0.74rem; color: var(--text);
+            white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+        }
+        .mc-matchup .vs { color: var(--muted); margin: 0 4px; font-size: 0.65rem; }
+        .mc-date { font-size: 0.6rem; color: var(--muted); margin-top: 2px; }
+
+        .mc-score {
+            font-family: 'Orbitron', sans-serif; font-weight: 900; font-size: 0.92rem;
+            color: #c4b5fd; white-space: nowrap;
+        }
+
+        /* ============================================================
            MOBILE PLAYER CARDS
            ============================================================ */
         .player-list { display: flex; flex-direction: column; gap: 8px; }
@@ -231,6 +331,27 @@
 
         .gd-pos { color: var(--green); }
         .gd-neg { color: var(--red); }
+
+        /* ---- POSTPONEMENT PILL ---- */
+        .postponement-badge {
+            display: inline-flex; align-items: center; gap: 5px;
+            margin-top: 6px;
+            padding: 3px 8px 3px 6px;
+            border-radius: 999px;
+            background: linear-gradient(135deg, rgba(245,158,11,0.14), rgba(245,158,11,0.05));
+            border: 1px solid rgba(245,158,11,0.28);
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.04);
+            color: #fbbf24;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.56rem; font-weight: 600; letter-spacing: 0.02em;
+            line-height: 1; white-space: nowrap;
+        }
+        .postponement-badge i {
+            display: inline-flex; align-items: center; justify-content: center;
+            width: 12px; height: 12px; border-radius: 50%;
+            background: rgba(245,158,11,0.18); color: #f59e0b; font-size: 0.48rem;
+        }
+        .postponement-badge .pp-count { color: #fde68a; font-weight: 700; }
 
         /* ============================================================
            DESKTOP TABLE — hidden by default, shown ≥ 680px
@@ -320,30 +441,6 @@
 
             .dt-name     { color:var(--text); font-weight:500; font-size:0.82rem; }
             .dt-username { font-size:0.62rem; color:var(--muted); margin-top:2px; }
-           .postponement-badge{
-    display:inline-flex;
-    align-items:center;
-    gap:4px;
-
-    margin-top:4px;
-    padding:2px 6px;
-
-    border-radius:6px;
-
-    background:rgba(245,158,11,.08);
-    border:1px solid rgba(245,158,11,.18);
-
-    color:#cbd5e1;
-    font-family:inherit;
-    font-size:.52rem;
-    font-weight:500;
-    line-height:1;
-}
-
-.postponement-badge i{
-    color:#f59e0b;
-    font-size:.5rem;
-}
             .pts-cell    { color:#c4b5fd; font-weight:700; font-size:0.92rem; }
 
             .form-badges { display:flex; gap:3px; justify-content:center; }
@@ -386,13 +483,45 @@
         &nbsp;·&nbsp; auto-refreshes every 5 min
     </div>
 
+    <!-- TABS -->
+    <div class="tab-bar" role="tablist">
+        <button class="tab-btn active" id="tab-btn-standings" role="tab" aria-selected="true" onclick="switchTab('standings')">
+            <i class="fas fa-trophy"></i> Leaderboard
+        </button>
+        <button class="tab-btn" id="tab-btn-history" role="tab" aria-selected="false" onclick="switchTab('history')">
+            <i class="fas fa-clock-rotate-left"></i> Match History
+        </button>
+    </div>
+
     <!-- STANDINGS -->
-    <div id="standings-root">
-        <div class="sk-card skeleton"></div>
-        <div class="sk-card skeleton" style="animation-delay:0.08s"></div>
-        <div class="sk-card skeleton" style="animation-delay:0.16s"></div>
-        <div class="sk-card skeleton" style="animation-delay:0.24s"></div>
-        <div class="sk-card skeleton" style="animation-delay:0.32s"></div>
+    <div id="standings-panel" class="tab-panel">
+        <div id="standings-root">
+            <div class="sk-card skeleton"></div>
+            <div class="sk-card skeleton" style="animation-delay:0.08s"></div>
+            <div class="sk-card skeleton" style="animation-delay:0.16s"></div>
+            <div class="sk-card skeleton" style="animation-delay:0.24s"></div>
+            <div class="sk-card skeleton" style="animation-delay:0.32s"></div>
+        </div>
+    </div>
+
+    <!-- MATCH HISTORY -->
+    <div id="history-panel" class="tab-panel" hidden>
+        <div class="history-search-wrap">
+            <i class="fas fa-magnifying-glass"></i>
+            <input
+                type="text"
+                id="history-search"
+                class="history-search"
+                placeholder="Search a username…"
+                autocomplete="off"
+                oninput="onHistorySearch(this.value)">
+            <button class="history-clear" id="history-clear" onclick="clearHistorySearch()" hidden>
+                <i class="fas fa-xmark"></i>
+            </button>
+        </div>
+        <div id="history-root">
+            <div class="empty-state"><i class="fas fa-user-magnifying-glass"></i>Search a username above<br>to see their match history.</div>
+        </div>
     </div>
 
     <footer>
@@ -474,12 +603,22 @@ document.addEventListener('touchend', () => {
 }, { passive: true });
 
 // ---- DATA ----
+let LEAGUE_PLAYERS = [];
+let LEAGUE_RESULTS = [];
+
 async function loadData() {
     try {
         const res  = await fetch('./data/league-data.json?_=' + Date.now());
         if (!res.ok) throw new Error('Not found');
         const data = await res.json();
-        renderStandings(data.players || []);
+        LEAGUE_PLAYERS = data.players || [];
+        LEAGUE_RESULTS = data.results || [];
+        renderStandings(LEAGUE_PLAYERS);
+        // Re-run any active search against the freshly loaded results
+        const searchEl = document.getElementById('history-search');
+        if (searchEl && searchEl.value.trim()) {
+            renderMatchHistory(searchEl.value.trim());
+        }
         const lu = document.getElementById('last-updated');
         lu.textContent = data.updatedAt
         ? new Date(data.updatedAt).toLocaleString('en-ZA', {
@@ -493,16 +632,127 @@ async function loadData() {
     }
 }
 
+// ---- TABS ----
+function switchTab(tab) {
+    const standingsPanel = document.getElementById('standings-panel');
+    const historyPanel   = document.getElementById('history-panel');
+    const standingsBtn   = document.getElementById('tab-btn-standings');
+    const historyBtn     = document.getElementById('tab-btn-history');
+
+    const showStandings = tab === 'standings';
+    standingsPanel.hidden = !showStandings;
+    historyPanel.hidden   = showStandings;
+    standingsBtn.classList.toggle('active', showStandings);
+    historyBtn.classList.toggle('active', !showStandings);
+    standingsBtn.setAttribute('aria-selected', String(showStandings));
+    historyBtn.setAttribute('aria-selected', String(!showStandings));
+
+    if (!showStandings) {
+        const searchEl = document.getElementById('history-search');
+        setTimeout(() => searchEl && searchEl.focus(), 50);
+    }
+}
+
+// ---- MATCH HISTORY SEARCH ----
+let historySearchDebounce = null;
+
+function onHistorySearch(value) {
+    const clearBtn = document.getElementById('history-clear');
+    clearBtn.hidden = !value.trim();
+    clearTimeout(historySearchDebounce);
+    historySearchDebounce = setTimeout(() => renderMatchHistory(value.trim()), 120);
+}
+
+function clearHistorySearch() {
+    const searchEl = document.getElementById('history-search');
+    searchEl.value = '';
+    document.getElementById('history-clear').hidden = true;
+    renderMatchHistory('');
+    searchEl.focus();
+}
+
+function renderMatchHistory(query) {
+    const root = document.getElementById('history-root');
+
+    if (!query) {
+        root.innerHTML = '<div class="empty-state"><i class="fas fa-user-magnifying-glass"></i>Search a username above<br>to see their match history.</div>';
+        return;
+    }
+
+    const q = query.toLowerCase();
+    // Match by username (exact-ish, case-insensitive contains) so partial typing still works
+    const player = LEAGUE_PLAYERS.find(p => (p.username || '').toLowerCase() === q)
+                || LEAGUE_PLAYERS.find(p => (p.username || '').toLowerCase().includes(q));
+
+    if (!player) {
+        root.innerHTML = `<div class="empty-state"><i class="fas fa-circle-question"></i>No player found matching<br>"${esc(query)}".</div>`;
+        return;
+    }
+
+    const username = player.username;
+    const matches = LEAGUE_RESULTS.filter(r => r.home === username || r.away === username);
+
+    if (!matches.length) {
+        root.innerHTML = `<div class="empty-state"><i class="fas fa-futbol"></i>${esc(player.name)} hasn't played<br>any matches yet.</div>`;
+        return;
+    }
+
+    // Most recent first
+    const sortedMatches = [...matches].sort((a, b) => (b.date || '').localeCompare(a.date || ''));
+
+    let wins = 0, draws = 0, losses = 0;
+    const cards = sortedMatches.map((m, i) => {
+        const isHome   = m.home === username;
+        const opponent = isHome ? m.away : m.home;
+        const myGoals  = isHome ? (m.homeGoals || 0) : (m.awayGoals || 0);
+        const oppGoals = isHome ? (m.awayGoals || 0) : (m.homeGoals || 0);
+
+        let outcome, label;
+        if (myGoals > oppGoals) { outcome = 'w'; label = 'W'; wins++; }
+        else if (myGoals < oppGoals) { outcome = 'l'; label = 'L'; losses++; }
+        else { outcome = 'd'; label = 'D'; draws++; }
+
+        const dateStr = m.date
+            ? new Date(m.date + 'T00:00:00').toLocaleDateString('en-ZA', { day: 'numeric', month: 'short', year: 'numeric' })
+            : '—';
+
+        return `
+        <div class="match-card mc-${outcome}" style="animation-delay:${Math.min(i,10) * 0.03}s">
+            <div class="mc-result mc-${outcome}">${label}</div>
+            <div>
+                <div class="mc-matchup">${esc(username)}<span class="vs">vs</span>${esc(opponent)}</div>
+                <div class="mc-date">${dateStr}</div>
+            </div>
+            <div class="mc-score">${myGoals}–${oppGoals}</div>
+        </div>`;
+    }).join('');
+
+    root.innerHTML = `
+        <div class="history-summary">
+            <div class="hs-name">${esc(player.name)} <span style="color:var(--muted);font-weight:400;">@${esc(username)}</span></div>
+            <div class="hs-record">
+                <span class="w">${wins}W</span>
+                <span class="d">${draws}D</span>
+                <span class="l">${losses}L</span>
+                &nbsp;·&nbsp; ${matches.length} games
+            </div>
+        </div>
+        <div class="match-list">${cards}</div>`;
+}
+
 // ---- RENDER STANDINGS ----
 function renderStandings(players) {
     const root = document.getElementById('standings-root');
 
-    if (!players.length) {
+    // Suspended players are hidden from the public leaderboard entirely
+    const active = (players || []).filter(p => !p.suspended);
+
+    if (!active.length) {
         root.innerHTML = '<div class="empty-state"><i class="fas fa-trophy"></i>No players registered yet.<br>Check back once the league kicks off.</div>';
         return;
     }
 
-    const sorted = [...players].sort((a, b) => {
+    const sorted = [...active].sort((a, b) => {
         if (b.points !== a.points) return b.points - a.points;
         const gdA = (a.gf||0)-(a.ga||0), gdB = (b.gf||0)-(b.ga||0);
         return gdA !== gdB ? gdB - gdA : (b.gf||0) - (a.gf||0);
@@ -551,7 +801,7 @@ function renderStandings(players) {
 
 <div class="postponement-badge">
     <i class="fas fa-hourglass-half"></i>
-    PP: ${p.postponements || 0}
+    <span class="pp-count">${p.postponements || 0}</span>&nbsp;left
 </div>
                 <div class="pc-stats">
                     <div class="pc-stat">P <span>${p.played||0}</span></div>
@@ -595,7 +845,7 @@ const tableRows = sorted.map((p, i) => {
 
             <div class="postponement-badge">
                 <i class="fas fa-calendar-alt"></i>
-                ${p.postponements || 0} Postponements
+                <span class="pp-count">${p.postponements || 0}</span>&nbsp;postponements left
             </div>
         </td>
 
@@ -665,10 +915,11 @@ function buildFormDesktop(form) {
     ).join('');
 }
 
-function esc(str) {
-    return String(str||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
 }
 
+// esc() is used by both renderStandings() and renderMatchHistory(), so it lives at top level
+function esc(str) {
+    return String(str||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
 }
 
 // ---- INIT ----
