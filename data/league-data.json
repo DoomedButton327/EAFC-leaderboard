@@ -4,12 +4,12 @@
       "name": "Moosa",
       "username": "CRANK_",
       "phone": "+27699906125",
-      "played": 47,
-      "wins": 41,
+      "played": 48,
+      "wins": 42,
       "draws": 3,
       "losses": 3,
-      "points": 126,
-      "gf": 124,
+      "points": 129,
+      "gf": 127,
       "ga": 15,
       "form": [
         "W",
@@ -19,8 +19,8 @@
         "W",
         "W",
         "W",
-        "W",
         "L",
+        "W",
         "W"
       ],
       "postponements": 8,
@@ -264,15 +264,14 @@
       "name": "👑•",
       "username": "Zan-Ten",
       "phone": "+27710050307",
-      "played": 46,
+      "played": 47,
       "wins": 12,
       "draws": 16,
-      "losses": 18,
+      "losses": 19,
       "points": 52,
       "gf": 34,
-      "ga": 50,
+      "ga": 53,
       "form": [
-        "D",
         "L",
         "D",
         "D",
@@ -281,6 +280,7 @@
         "D",
         "L",
         "D",
+        "L",
         "L"
       ],
       "postponements": 20,
@@ -522,6 +522,14 @@
     }
   ],
   "results": [
+    {
+      "home": "Zan-Ten",
+      "away": "CRANK_",
+      "homeGoals": 0,
+      "awayGoals": 3,
+      "result": "away",
+      "date": "2026-07-21"
+    },
     {
       "home": "YungboyShlime",
       "away": "Nyali11",
@@ -3691,6 +3699,6 @@
       "date": "2026-07-14"
     }
   ],
-  "updatedAt": "2026-07-21T04:32:40.616Z",
-  "matchesPlayed": 396
+  "updatedAt": "2026-07-21T07:48:22.783Z",
+  "matchesPlayed": 397
 }
