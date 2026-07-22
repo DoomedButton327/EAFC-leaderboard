@@ -30,15 +30,14 @@
       "name": "Ctaum",
       "username": "Ctaum-cpt",
       "phone": "+27764797158",
-      "played": 51,
+      "played": 52,
       "wins": 35,
-      "draws": 6,
+      "draws": 7,
       "losses": 10,
-      "points": 111,
+      "points": 112,
       "gf": 116,
       "ga": 30,
       "form": [
-        "W",
         "W",
         "W",
         "L",
@@ -47,7 +46,8 @@
         "W",
         "L",
         "W",
-        "W"
+        "W",
+        "D"
       ],
       "postponements": 18,
       "suspended": false
@@ -187,12 +187,12 @@
       "username": "RoyalAM",
       "phone": "+27682987402",
       "played": 49,
-      "wins": 17,
+      "wins": 18,
       "draws": 16,
-      "losses": 16,
-      "points": 67,
-      "gf": 52,
-      "ga": 51,
+      "losses": 15,
+      "points": 70,
+      "gf": 55,
+      "ga": 48,
       "form": [
         "D",
         "L",
@@ -212,19 +212,19 @@
       "name": "Thandobhaze",
       "username": "Bhaze",
       "phone": "+27679687240",
-      "played": 52,
-      "wins": 12,
-      "draws": 28,
-      "losses": 12,
-      "points": 64,
-      "gf": 42,
-      "ga": 32,
+      "played": 53,
+      "wins": 13,
+      "draws": 29,
+      "losses": 11,
+      "points": 68,
+      "gf": 45,
+      "ga": 29,
       "form": [
         "D",
         "D",
         "D",
-        "D",
         "L",
+        "D",
         "D",
         "D",
         "D",
@@ -365,42 +365,16 @@
       "suspended": false
     },
     {
-      "name": "👑•",
-      "username": "Zan-Ten",
-      "phone": "+27710050307",
-      "played": 48,
-      "wins": 3,
-      "draws": 5,
-      "losses": 40,
-      "points": 14,
-      "gf": 9,
-      "ga": 116,
-      "form": [
-        "L",
-        "L",
-        "L",
-        "D",
-        "L",
-        "L",
-        "L",
-        "L",
-        "L",
-        "L"
-      ],
-      "postponements": 20,
-      "suspended": true
-    },
-    {
       "name": "Reginald Frank Thornton",
       "username": "RFT07",
       "phone": "+27820658330",
       "played": 46,
       "wins": 2,
-      "draws": 6,
-      "losses": 38,
-      "points": 12,
+      "draws": 7,
+      "losses": 37,
+      "points": 13,
       "gf": 6,
-      "ga": 114,
+      "ga": 111,
       "form": [
         "L",
         "L",
@@ -440,6 +414,32 @@
         "D"
       ],
       "postponements": 18,
+      "suspended": true
+    },
+    {
+      "name": "👑•",
+      "username": "Zan-Ten",
+      "phone": "+27710050307",
+      "played": 48,
+      "wins": 0,
+      "draws": 6,
+      "losses": 42,
+      "points": 6,
+      "gf": 0,
+      "ga": 122,
+      "form": [
+        "L",
+        "L",
+        "L",
+        "D",
+        "L",
+        "L",
+        "L",
+        "L",
+        "L",
+        "L"
+      ],
+      "postponements": 20,
       "suspended": true
     },
     {
@@ -522,6 +522,14 @@
     }
   ],
   "results": [
+    {
+      "home": "Ctaum-cpt",
+      "away": "Bhaze",
+      "homeGoals": 0,
+      "awayGoals": 0,
+      "result": "draw",
+      "date": "2026-07-22"
+    },
     {
       "home": "Zan-Ten",
       "away": "XWRLD_REAPERS",
@@ -1789,9 +1797,9 @@
     {
       "home": "Zan-Ten",
       "away": "Bhaze",
-      "homeGoals": 3,
-      "awayGoals": 0,
-      "result": "home",
+      "homeGoals": 0,
+      "awayGoals": 3,
+      "result": "away",
       "date": "2026-05-22"
     },
     {
@@ -1845,9 +1853,9 @@
     {
       "home": "Zan-Ten",
       "away": "RoyalAM",
-      "homeGoals": 3,
-      "awayGoals": 0,
-      "result": "home",
+      "homeGoals": 0,
+      "awayGoals": 3,
+      "result": "away",
       "date": "2026-05-23"
     },
     {
@@ -3190,8 +3198,8 @@
       "home": "RFT07",
       "away": "Zan-Ten",
       "homeGoals": 0,
-      "awayGoals": 3,
-      "result": "away",
+      "awayGoals": 0,
+      "result": "draw",
       "date": "2026-06-27"
     },
     {
@@ -3755,6 +3763,6 @@
       "date": "2026-07-14"
     }
   ],
-  "updatedAt": "2026-07-22T10:33:34.546Z",
-  "matchesPlayed": 404
+  "updatedAt": "2026-07-22T10:58:30.359Z",
+  "matchesPlayed": 405
 }
