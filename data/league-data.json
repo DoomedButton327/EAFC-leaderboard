@@ -31,11 +31,11 @@
       "username": "Ctaum-cpt",
       "phone": "+27764797158",
       "played": 51,
-      "wins": 34,
-      "draws": 7,
+      "wins": 35,
+      "draws": 6,
       "losses": 10,
-      "points": 109,
-      "gf": 113,
+      "points": 111,
+      "gf": 116,
       "ga": 30,
       "form": [
         "W",
@@ -57,21 +57,21 @@
       "username": "Nigelmj21",
       "phone": "+27656657141",
       "played": 49,
-      "wins": 30,
-      "draws": 14,
+      "wins": 33,
+      "draws": 11,
       "losses": 5,
-      "points": 104,
-      "gf": 76,
+      "points": 110,
+      "gf": 85,
       "ga": 19,
       "form": [
         "D",
         "D",
-        "D",
+        "W",
         "W",
         "D",
         "W",
         "L",
-        "D",
+        "W",
         "D",
         "L"
       ],
@@ -105,6 +105,58 @@
       "suspended": false
     },
     {
+      "name": "Mk Liyas",
+      "username": "Nyali11",
+      "phone": "+27786218748",
+      "played": 50,
+      "wins": 24,
+      "draws": 10,
+      "losses": 16,
+      "points": 82,
+      "gf": 74,
+      "ga": 41,
+      "form": [
+        "W",
+        "D",
+        "L",
+        "L",
+        "L",
+        "D",
+        "W",
+        "D",
+        "D",
+        "D"
+      ],
+      "postponements": 19,
+      "suspended": false
+    },
+    {
+      "name": "Dilibo👑",
+      "username": "DiliboL",
+      "phone": "+27760348136",
+      "played": 50,
+      "wins": 21,
+      "draws": 17,
+      "losses": 12,
+      "points": 80,
+      "gf": 62,
+      "ga": 35,
+      "form": [
+        "W",
+        "D",
+        "D",
+        "L",
+        "D",
+        "D",
+        "D",
+        "D",
+        "D",
+        "L"
+      ],
+      "postponements": 15,
+      "suspended": false
+    },
+    {
       "name": "mansur",
       "username": "ICONIC-CLUB",
       "phone": "+255616502631",
@@ -131,93 +183,15 @@
       "suspended": false
     },
     {
-      "name": "Dilibo👑",
-      "username": "DiliboL",
-      "phone": "+27760348136",
-      "played": 50,
-      "wins": 19,
-      "draws": 19,
-      "losses": 12,
-      "points": 76,
-      "gf": 56,
-      "ga": 35,
-      "form": [
-        "D",
-        "D",
-        "D",
-        "L",
-        "D",
-        "D",
-        "D",
-        "D",
-        "D",
-        "L"
-      ],
-      "postponements": 15,
-      "suspended": false
-    },
-    {
-      "name": "Mk Liyas",
-      "username": "Nyali11",
-      "phone": "+27786218748",
-      "played": 50,
-      "wins": 21,
-      "draws": 12,
-      "losses": 17,
-      "points": 75,
-      "gf": 65,
-      "ga": 43,
-      "form": [
-        "W",
-        "D",
-        "L",
-        "L",
-        "L",
-        "D",
-        "D",
-        "D",
-        "D",
-        "D"
-      ],
-      "postponements": 19,
-      "suspended": false
-    },
-    {
-      "name": "Thandobhaze",
-      "username": "Bhaze",
-      "phone": "+27679687240",
-      "played": 52,
-      "wins": 11,
-      "draws": 29,
-      "losses": 12,
-      "points": 62,
-      "gf": 39,
-      "ga": 32,
-      "form": [
-        "D",
-        "D",
-        "D",
-        "D",
-        "L",
-        "D",
-        "D",
-        "D",
-        "D",
-        "D"
-      ],
-      "postponements": 20,
-      "suspended": false
-    },
-    {
       "name": "🅿️🅾️🕉️🅱️🅰️",
       "username": "RoyalAM",
       "phone": "+27682987402",
       "played": 49,
-      "wins": 14,
-      "draws": 19,
+      "wins": 17,
+      "draws": 16,
       "losses": 16,
-      "points": 61,
-      "gf": 43,
+      "points": 67,
+      "gf": 52,
       "ga": 51,
       "form": [
         "D",
@@ -235,55 +209,55 @@
       "suspended": false
     },
     {
-      "name": "XWRLD 🕴🏼",
-      "username": "XWRLD_REAPERS",
-      "phone": "+27750656258",
-      "played": 37,
-      "wins": 14,
-      "draws": 10,
-      "losses": 13,
-      "points": 52,
-      "gf": 39,
-      "ga": 24,
+      "name": "Thandobhaze",
+      "username": "Bhaze",
+      "phone": "+27679687240",
+      "played": 52,
+      "wins": 12,
+      "draws": 28,
+      "losses": 12,
+      "points": 64,
+      "gf": 42,
+      "ga": 32,
       "form": [
         "D",
         "D",
         "D",
-        "L",
-        "L",
-        "W",
-        "L",
         "D",
         "L",
-        "L"
+        "D",
+        "D",
+        "D",
+        "D",
+        "D"
       ],
-      "postponements": 7,
+      "postponements": 20,
       "suspended": false
     },
     {
-      "name": "👑•",
-      "username": "Zan-Ten",
-      "phone": "+27710050307",
-      "played": 47,
-      "wins": 12,
-      "draws": 16,
-      "losses": 19,
-      "points": 52,
-      "gf": 34,
-      "ga": 53,
+      "name": "XWRLD 🕴🏼",
+      "username": "XWRLD_REAPERS",
+      "phone": "+27750656258",
+      "played": 38,
+      "wins": 17,
+      "draws": 9,
+      "losses": 12,
+      "points": 60,
+      "gf": 48,
+      "ga": 22,
       "form": [
+        "D",
+        "D",
         "L",
-        "D",
-        "D",
-        "D",
+        "L",
         "W",
-        "D",
         "L",
         "D",
         "L",
-        "L"
+        "L",
+        "W"
       ],
-      "postponements": 20,
+      "postponements": 7,
       "suspended": false
     },
     {
@@ -291,12 +265,12 @@
       "username": "Kloutt",
       "phone": "+27792135785",
       "played": 52,
-      "wins": 9,
+      "wins": 10,
       "draws": 25,
-      "losses": 18,
-      "points": 52,
-      "gf": 25,
-      "ga": 66,
+      "losses": 17,
+      "points": 55,
+      "gf": 28,
+      "ga": 63,
       "form": [
         "D",
         "D",
@@ -310,6 +284,32 @@
         "D"
       ],
       "postponements": 14,
+      "suspended": false
+    },
+    {
+      "name": "Sibusiso Makhanye❤️😎🇿🇦",
+      "username": "YungboyShlime",
+      "phone": "+27810878650",
+      "played": 51,
+      "wins": 9,
+      "draws": 26,
+      "losses": 16,
+      "points": 53,
+      "gf": 31,
+      "ga": 48,
+      "form": [
+        "W",
+        "D",
+        "D",
+        "W",
+        "D",
+        "D",
+        "D",
+        "D",
+        "D",
+        "D"
+      ],
+      "postponements": 20,
       "suspended": false
     },
     {
@@ -339,32 +339,6 @@
       "suspended": false
     },
     {
-      "name": "Sibusiso Makhanye❤️😎🇿🇦",
-      "username": "YungboyShlime",
-      "phone": "+27810878650",
-      "played": 51,
-      "wins": 5,
-      "draws": 29,
-      "losses": 17,
-      "points": 44,
-      "gf": 19,
-      "ga": 51,
-      "form": [
-        "D",
-        "D",
-        "D",
-        "D",
-        "D",
-        "D",
-        "D",
-        "D",
-        "D",
-        "D"
-      ],
-      "postponements": 20,
-      "suspended": false
-    },
-    {
       "name": "Nkosii",
       "username": "DARK-_-CEO",
       "phone": "+27832798832",
@@ -391,16 +365,42 @@
       "suspended": false
     },
     {
+      "name": "👑•",
+      "username": "Zan-Ten",
+      "phone": "+27710050307",
+      "played": 48,
+      "wins": 3,
+      "draws": 5,
+      "losses": 40,
+      "points": 14,
+      "gf": 9,
+      "ga": 116,
+      "form": [
+        "L",
+        "L",
+        "L",
+        "D",
+        "L",
+        "L",
+        "L",
+        "L",
+        "L",
+        "L"
+      ],
+      "postponements": 20,
+      "suspended": true
+    },
+    {
       "name": "Reginald Frank Thornton",
       "username": "RFT07",
       "phone": "+27820658330",
       "played": 46,
       "wins": 2,
-      "draws": 2,
-      "losses": 42,
-      "points": 8,
+      "draws": 6,
+      "losses": 38,
+      "points": 12,
       "gf": 6,
-      "ga": 126,
+      "ga": 114,
       "form": [
         "L",
         "L",
@@ -410,7 +410,7 @@
         "L",
         "L",
         "L",
-        "L",
+        "D",
         "L"
       ],
       "postponements": 14,
@@ -500,11 +500,11 @@
       "phone": "",
       "played": 24,
       "wins": 0,
-      "draws": 0,
-      "losses": 24,
-      "points": 0,
+      "draws": 1,
+      "losses": 23,
+      "points": 1,
       "gf": 0,
-      "ga": 72,
+      "ga": 69,
       "form": [
         "L",
         "L",
@@ -515,13 +515,21 @@
         "L",
         "L",
         "L",
-        "L"
+        "D"
       ],
       "postponements": 0,
       "suspended": true
     }
   ],
   "results": [
+    {
+      "home": "Zan-Ten",
+      "away": "XWRLD_REAPERS",
+      "homeGoals": 0,
+      "awayGoals": 3,
+      "result": "away",
+      "date": "2026-07-22"
+    },
     {
       "home": "Nigelmj21",
       "away": "Kloutt",
@@ -629,9 +637,9 @@
     {
       "home": "Nigelmj21",
       "away": "Zan-Ten",
-      "homeGoals": 0,
+      "homeGoals": 3,
       "awayGoals": 0,
-      "result": "draw",
+      "result": "home",
       "date": "2026-07-18"
     },
     {
@@ -733,9 +741,9 @@
     {
       "home": "Nyali11",
       "away": "Zan-Ten",
-      "homeGoals": 0,
+      "homeGoals": 3,
       "awayGoals": 0,
-      "result": "draw",
+      "result": "home",
       "date": "2026-07-17"
     },
     {
@@ -1005,9 +1013,9 @@
     {
       "home": "Kloutt",
       "away": "Zan-Ten",
-      "homeGoals": 0,
-      "awayGoals": 3,
-      "result": "away",
+      "homeGoals": 3,
+      "awayGoals": 0,
+      "result": "home",
       "date": "2026-05-06"
     },
     {
@@ -1101,9 +1109,9 @@
     {
       "home": "Zan-Ten",
       "away": "RFT07",
-      "homeGoals": 3,
+      "homeGoals": 0,
       "awayGoals": 0,
-      "result": "home",
+      "result": "draw",
       "date": "2026-05-07"
     },
     {
@@ -1253,9 +1261,9 @@
     {
       "home": "Zan-Ten",
       "away": "YungboyShlime",
-      "homeGoals": 3,
-      "awayGoals": 0,
-      "result": "home",
+      "homeGoals": 0,
+      "awayGoals": 3,
+      "result": "away",
       "date": "2026-05-11"
     },
     {
@@ -1365,9 +1373,9 @@
     {
       "home": "Nyali11",
       "away": "Zan-Ten",
-      "homeGoals": 0,
-      "awayGoals": 2,
-      "result": "away",
+      "homeGoals": 3,
+      "awayGoals": 0,
+      "result": "home",
       "date": "2026-05-12"
     },
     {
@@ -1509,9 +1517,9 @@
     {
       "home": "XWRLD_REAPERS",
       "away": "Zan-Ten",
-      "homeGoals": 0,
-      "awayGoals": 2,
-      "result": "away",
+      "homeGoals": 3,
+      "awayGoals": 0,
+      "result": "home",
       "date": "2026-05-14"
     },
     {
@@ -1974,8 +1982,8 @@
       "home": "Zan-Ten",
       "away": "DiliboL",
       "homeGoals": 0,
-      "awayGoals": 0,
-      "result": "draw",
+      "awayGoals": 3,
+      "result": "away",
       "date": "2026-05-27"
     },
     {
@@ -2221,9 +2229,9 @@
     {
       "home": "RoyalAM",
       "away": "Zan-Ten",
-      "homeGoals": 0,
+      "homeGoals": 3,
       "awayGoals": 0,
-      "result": "draw",
+      "result": "home",
       "date": "2026-06-01"
     },
     {
@@ -2269,9 +2277,9 @@
     {
       "home": "Bhaze",
       "away": "Zan-Ten",
-      "homeGoals": 0,
+      "homeGoals": 3,
       "awayGoals": 0,
-      "result": "draw",
+      "result": "home",
       "date": "2026-06-02"
     },
     {
@@ -2366,8 +2374,8 @@
       "home": "RFT07",
       "away": "Zan-Ten",
       "homeGoals": 0,
-      "awayGoals": 3,
-      "result": "away",
+      "awayGoals": 0,
+      "result": "draw",
       "date": "2026-06-04"
     },
     {
@@ -2437,9 +2445,9 @@
     {
       "home": "Zan-Ten",
       "away": "CodeTalker",
-      "homeGoals": 3,
+      "homeGoals": 0,
       "awayGoals": 0,
-      "result": "home",
+      "result": "draw",
       "date": "2026-06-05"
     },
     {
@@ -2461,9 +2469,9 @@
     {
       "home": "XWRLD_REAPERS",
       "away": "Zan-Ten",
-      "homeGoals": 0,
+      "homeGoals": 3,
       "awayGoals": 0,
-      "result": "draw",
+      "result": "home",
       "date": "2026-06-06"
     },
     {
@@ -2501,9 +2509,9 @@
     {
       "home": "Ctaum-cpt",
       "away": "Zan-Ten",
-      "homeGoals": 0,
+      "homeGoals": 3,
       "awayGoals": 0,
-      "result": "draw",
+      "result": "home",
       "date": "2026-06-08"
     },
     {
@@ -2702,8 +2710,8 @@
       "home": "Zan-Ten",
       "away": "YungboyShlime",
       "homeGoals": 0,
-      "awayGoals": 0,
-      "result": "draw",
+      "awayGoals": 3,
+      "result": "away",
       "date": "2026-06-12"
     },
     {
@@ -2750,8 +2758,8 @@
       "home": "Zan-Ten",
       "away": "RoyalAM",
       "homeGoals": 0,
-      "awayGoals": 0,
-      "result": "draw",
+      "awayGoals": 3,
+      "result": "away",
       "date": "2026-06-13"
     },
     {
@@ -2830,8 +2838,8 @@
       "home": "RFT07",
       "away": "Zan-Ten",
       "homeGoals": 0,
-      "awayGoals": 3,
-      "result": "away",
+      "awayGoals": 0,
+      "result": "draw",
       "date": "2026-06-15"
     },
     {
@@ -2893,9 +2901,9 @@
     {
       "home": "RoyalAM",
       "away": "Zan-Ten",
-      "homeGoals": 0,
+      "homeGoals": 3,
       "awayGoals": 0,
-      "result": "draw",
+      "result": "home",
       "date": "2026-06-19"
     },
     {
@@ -3285,9 +3293,9 @@
     {
       "home": "Nigelmj21",
       "away": "Zan-Ten",
-      "homeGoals": 0,
+      "homeGoals": 3,
       "awayGoals": 0,
-      "result": "draw",
+      "result": "home",
       "date": "2026-06-30"
     },
     {
@@ -3325,9 +3333,9 @@
     {
       "home": "Nyali11",
       "away": "Zan-Ten",
-      "homeGoals": 0,
+      "homeGoals": 3,
       "awayGoals": 0,
-      "result": "draw",
+      "result": "home",
       "date": "2026-07-02"
     },
     {
@@ -3445,9 +3453,9 @@
     {
       "home": "YungboyShlime",
       "away": "Zan-Ten",
-      "homeGoals": 0,
+      "homeGoals": 3,
       "awayGoals": 0,
-      "result": "draw",
+      "result": "home",
       "date": "2026-07-04"
     },
     {
@@ -3477,9 +3485,9 @@
     {
       "home": "DiliboL",
       "away": "Zan-Ten",
-      "homeGoals": 0,
+      "homeGoals": 3,
       "awayGoals": 0,
-      "result": "draw",
+      "result": "home",
       "date": "2026-07-06"
     },
     {
@@ -3565,9 +3573,9 @@
     {
       "home": "YungboyShlime",
       "away": "Zan-Ten",
-      "homeGoals": 0,
+      "homeGoals": 3,
       "awayGoals": 0,
-      "result": "draw",
+      "result": "home",
       "date": "2026-07-10"
     },
     {
@@ -3629,9 +3637,9 @@
     {
       "home": "Nigelmj21",
       "away": "Zan-Ten",
-      "homeGoals": 0,
+      "homeGoals": 3,
       "awayGoals": 0,
-      "result": "draw",
+      "result": "home",
       "date": "2026-07-11"
     },
     {
@@ -3725,9 +3733,9 @@
     {
       "home": "Zan-Ten",
       "away": "RFT07",
-      "homeGoals": 3,
+      "homeGoals": 0,
       "awayGoals": 0,
-      "result": "home",
+      "result": "draw",
       "date": "2026-07-14"
     },
     {
@@ -3747,6 +3755,6 @@
       "date": "2026-07-14"
     }
   ],
-  "updatedAt": "2026-07-22T06:15:13.981Z",
-  "matchesPlayed": 403
+  "updatedAt": "2026-07-22T10:30:19.058Z",
+  "matchesPlayed": 404
 }
