@@ -4,19 +4,19 @@
       "name": "Moosa",
       "username": "CRANK_",
       "phone": "+27699906125",
-      "played": 51,
-      "wins": 45,
+      "played": 52,
+      "wins": 46,
       "draws": 3,
       "losses": 3,
-      "points": 138,
-      "gf": 136,
+      "points": 141,
+      "gf": 139,
       "ga": 15,
       "form": [
         "W",
         "W",
         "W",
-        "W",
         "L",
+        "W",
         "W",
         "W",
         "W",
@@ -30,15 +30,14 @@
       "name": "Ctaum",
       "username": "Ctaum-cpt",
       "phone": "+27764797158",
-      "played": 54,
+      "played": 55,
       "wins": 36,
       "draws": 7,
-      "losses": 11,
+      "losses": 12,
       "points": 115,
       "gf": 119,
-      "ga": 33,
+      "ga": 36,
       "form": [
-        "L",
         "W",
         "D",
         "W",
@@ -47,7 +46,8 @@
         "W",
         "D",
         "L",
-        "W"
+        "W",
+        "L"
       ],
       "postponements": 18,
       "suspended": false
@@ -56,16 +56,14 @@
       "name": "El Tigre",
       "username": "Nigelmj21",
       "phone": "+27656657141",
-      "played": 51,
+      "played": 53,
       "wins": 33,
       "draws": 13,
-      "losses": 5,
+      "losses": 7,
       "points": 112,
       "gf": 85,
-      "ga": 19,
+      "ga": 25,
       "form": [
-        "W",
-        "W",
         "D",
         "W",
         "L",
@@ -73,7 +71,9 @@
         "D",
         "L",
         "D",
-        "D"
+        "D",
+        "L",
+        "L"
       ],
       "postponements": 8,
       "suspended": false
@@ -82,24 +82,24 @@
       "name": "SMANGALISO",
       "username": "SMANGALISO",
       "phone": "+27780070989",
-      "played": 54,
+      "played": 55,
       "wins": 26,
       "draws": 13,
-      "losses": 15,
+      "losses": 16,
       "points": 91,
       "gf": 80,
-      "ga": 47,
+      "ga": 48,
       "form": [
         "W",
         "W",
         "W",
-        "W",
         "L",
         "W",
         "L",
         "W",
         "L",
-        "D"
+        "D",
+        "L"
       ],
       "postponements": 5,
       "suspended": false
@@ -108,15 +108,14 @@
       "name": "Mk Liyas",
       "username": "Nyali11",
       "phone": "+27786218748",
-      "played": 53,
-      "wins": 24,
+      "played": 54,
+      "wins": 25,
       "draws": 13,
       "losses": 16,
-      "points": 85,
-      "gf": 74,
+      "points": 88,
+      "gf": 75,
       "ga": 41,
       "form": [
-        "L",
         "L",
         "D",
         "W",
@@ -125,7 +124,8 @@
         "D",
         "D",
         "D",
-        "D"
+        "D",
+        "W"
       ],
       "postponements": 19,
       "suspended": false
@@ -160,15 +160,14 @@
       "name": "mansur",
       "username": "ICONIC-CLUB",
       "phone": "+255616502631",
-      "played": 56,
+      "played": 57,
       "wins": 19,
-      "draws": 24,
+      "draws": 25,
       "losses": 13,
-      "points": 81,
+      "points": 82,
       "gf": 58,
       "ga": 35,
       "form": [
-        "L",
         "D",
         "D",
         "W",
@@ -176,6 +175,7 @@
         "D",
         "W",
         "L",
+        "D",
         "D",
         "D"
       ],
@@ -186,15 +186,14 @@
       "name": "Thandobhaze",
       "username": "Bhaze",
       "phone": "+27679687240",
-      "played": 55,
+      "played": 56,
       "wins": 14,
-      "draws": 30,
+      "draws": 31,
       "losses": 11,
-      "points": 72,
+      "points": 73,
       "gf": 48,
       "ga": 29,
       "form": [
-        "D",
         "L",
         "D",
         "D",
@@ -203,7 +202,8 @@
         "D",
         "D",
         "D",
-        "W"
+        "W",
+        "D"
       ],
       "postponements": 20,
       "suspended": false
@@ -212,15 +212,14 @@
       "name": "🅿️🅾️🕉️🅱️🅰️",
       "username": "RoyalAM",
       "phone": "+27682987402",
-      "played": 52,
+      "played": 53,
       "wins": 18,
-      "draws": 18,
+      "draws": 19,
       "losses": 16,
-      "points": 72,
+      "points": 73,
       "gf": 55,
       "ga": 51,
       "form": [
-        "L",
         "W",
         "D",
         "D",
@@ -229,7 +228,8 @@
         "W",
         "D",
         "D",
-        "L"
+        "L",
+        "D"
       ],
       "postponements": 18,
       "suspended": false
@@ -238,21 +238,21 @@
       "name": "XWRLD 🕴🏼",
       "username": "XWRLD_REAPERS",
       "phone": "+27750656258",
-      "played": 40,
-      "wins": 19,
+      "played": 41,
+      "wins": 20,
       "draws": 9,
       "losses": 12,
-      "points": 66,
-      "gf": 54,
+      "points": 69,
+      "gf": 57,
       "ga": 22,
       "form": [
-        "L",
         "L",
         "W",
         "L",
         "D",
         "L",
         "L",
+        "W",
         "W",
         "W",
         "W"
@@ -287,14 +287,40 @@
       "suspended": false
     },
     {
+      "name": "Junaid",
+      "username": "BreadNTea-RSA",
+      "phone": "+27687182477",
+      "played": 26,
+      "wins": 16,
+      "draws": 6,
+      "losses": 4,
+      "points": 54,
+      "gf": 49,
+      "ga": 23,
+      "form": [
+        "D",
+        "W",
+        "D",
+        "W",
+        "L",
+        "W",
+        "W",
+        "L",
+        "L",
+        "W"
+      ],
+      "postponements": 13,
+      "suspended": false
+    },
+    {
       "name": "Sibusiso Makhanye❤️😎🇿🇦",
       "username": "YungboyShlime",
       "phone": "+27810878650",
-      "played": 55,
+      "played": 56,
       "wins": 9,
-      "draws": 26,
+      "draws": 27,
       "losses": 20,
-      "points": 53,
+      "points": 54,
       "gf": 31,
       "ga": 62,
       "form": [
@@ -303,39 +329,13 @@
         "D",
         "D",
         "D",
-        "D",
         "L",
         "L",
         "L",
-        "L"
+        "L",
+        "D"
       ],
       "postponements": 20,
-      "suspended": false
-    },
-    {
-      "name": "Junaid",
-      "username": "BreadNTea-RSA",
-      "phone": "+27687182477",
-      "played": 25,
-      "wins": 15,
-      "draws": 6,
-      "losses": 4,
-      "points": 51,
-      "gf": 46,
-      "ga": 23,
-      "form": [
-        "D",
-        "D",
-        "W",
-        "D",
-        "W",
-        "L",
-        "W",
-        "W",
-        "L",
-        "L"
-      ],
-      "postponements": 13,
       "suspended": false
     },
     {
@@ -522,6 +522,54 @@
     }
   ],
   "results": [
+    {
+      "home": "RoyalAM",
+      "away": "ICONIC-CLUB",
+      "homeGoals": 0,
+      "awayGoals": 0,
+      "result": "draw",
+      "date": "2026-07-25"
+    },
+    {
+      "home": "Bhaze",
+      "away": "YungboyShlime",
+      "homeGoals": 0,
+      "awayGoals": 0,
+      "result": "draw",
+      "date": "2026-07-25"
+    },
+    {
+      "home": "XWRLD_REAPERS",
+      "away": "Nigelmj21",
+      "homeGoals": 3,
+      "awayGoals": 0,
+      "result": "home",
+      "date": "2026-07-23"
+    },
+    {
+      "home": "Ctaum-cpt",
+      "away": "BreadNTea-RSA",
+      "homeGoals": 0,
+      "awayGoals": 3,
+      "result": "away",
+      "date": "2026-07-25"
+    },
+    {
+      "home": "Nigelmj21",
+      "away": "CRANK_",
+      "homeGoals": 0,
+      "awayGoals": 3,
+      "result": "away",
+      "date": "2026-07-25"
+    },
+    {
+      "home": "SMANGALISO",
+      "away": "Nyali11",
+      "homeGoals": 0,
+      "awayGoals": 1,
+      "result": "away",
+      "date": "2026-07-25"
+    },
     {
       "home": "Nyali11",
       "away": "DiliboL",
@@ -3915,6 +3963,6 @@
       "date": "2026-07-14"
     }
   ],
-  "updatedAt": "2026-07-24T22:10:04.948Z",
-  "matchesPlayed": 424
+  "updatedAt": "2026-07-25T21:14:53.426Z",
+  "matchesPlayed": 430
 }
