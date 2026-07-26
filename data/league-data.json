@@ -96,9 +96,9 @@
         "L",
         "W",
         "L",
+        "D",
         "W",
         "L",
-        "D",
         "L"
       ],
       "postponements": 5,
@@ -148,8 +148,8 @@
         "D",
         "D",
         "L",
-        "L",
         "D",
+        "L",
         "D",
         "D"
       ],
@@ -174,12 +174,38 @@
         "W",
         "D",
         "W",
-        "L",
         "D",
+        "L",
         "D",
         "D"
       ],
       "postponements": 19,
+      "suspended": false
+    },
+    {
+      "name": "XWRLD 🕴🏼",
+      "username": "XWRLD_REAPERS",
+      "phone": "+27750656258",
+      "played": 43,
+      "wins": 22,
+      "draws": 9,
+      "losses": 12,
+      "points": 75,
+      "gf": 63,
+      "ga": 22,
+      "form": [
+        "L",
+        "D",
+        "L",
+        "L",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      "postponements": 5,
       "suspended": false
     },
     {
@@ -225,8 +251,8 @@
         "D",
         "L",
         "W",
-        "W",
         "D",
+        "W",
         "D",
         "L",
         "D"
@@ -235,42 +261,16 @@
       "suspended": false
     },
     {
-      "name": "XWRLD 🕴🏼",
-      "username": "XWRLD_REAPERS",
-      "phone": "+27750656258",
-      "played": 43,
-      "wins": 20,
-      "draws": 11,
-      "losses": 12,
-      "points": 71,
-      "gf": 57,
-      "ga": 22,
-      "form": [
-        "L",
-        "D",
-        "L",
-        "L",
-        "W",
-        "W",
-        "W",
-        "W",
-        "D",
-        "D"
-      ],
-      "postponements": 5,
-      "suspended": false
-    },
-    {
       "name": "DJ THABISO KOMAKO",
       "username": "Kloutt",
       "phone": "+27792135785",
       "played": 56,
       "wins": 10,
-      "draws": 29,
-      "losses": 17,
-      "points": 59,
+      "draws": 28,
+      "losses": 18,
+      "points": 58,
       "gf": 28,
-      "ga": 63,
+      "ga": 66,
       "form": [
         "L",
         "L",
@@ -281,7 +281,7 @@
         "D",
         "D",
         "D",
-        "D"
+        "L"
       ],
       "postponements": 14,
       "suspended": false
@@ -344,22 +344,22 @@
       "phone": "+27832798832",
       "played": 25,
       "wins": 12,
-      "draws": 9,
-      "losses": 4,
-      "points": 45,
+      "draws": 8,
+      "losses": 5,
+      "points": 44,
       "gf": 33,
-      "ga": 12,
+      "ga": 15,
       "form": [
         "L",
         "W",
         "L",
         "D",
         "W",
-        "W",
-        "W",
         "L",
+        "W",
+        "W",
         "D",
-        "D"
+        "L"
       ],
       "postponements": 17,
       "suspended": false
@@ -526,8 +526,8 @@
       "home": "Kloutt",
       "away": "XWRLD_REAPERS",
       "homeGoals": 0,
-      "awayGoals": 0,
-      "result": "draw",
+      "awayGoals": 3,
+      "result": "away",
       "date": "2026-07-25"
     },
     {
@@ -541,9 +541,9 @@
     {
       "home": "XWRLD_REAPERS",
       "away": "DARK-_-CEO",
-      "homeGoals": 0,
+      "homeGoals": 3,
       "awayGoals": 0,
-      "result": "draw",
+      "result": "home",
       "date": "2026-07-23"
     },
     {
@@ -3995,6 +3995,6 @@
       "date": "2026-07-14"
     }
   ],
-  "updatedAt": "2026-07-25T22:10:16.022Z",
+  "updatedAt": "2026-07-26T08:59:12.091Z",
   "matchesPlayed": 434
 }
